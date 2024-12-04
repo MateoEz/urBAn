@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F5F5DC; /* Beige claro */
+    background-color: #000000; /* Beige claro */
     color: #8B5A2B; /* Marrón claro para el texto */
 }
 
@@ -127,8 +127,8 @@ header nav ul li a:hover {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 0.15em solid #D8C8A2; /* Cursor beige oscuro */
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    border-right: 2px solid #D8C8A2; /* Cursor */
+    animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -144,6 +144,15 @@ header nav ul li a:hover {
 .dynamic-word {
     color: #FF5733; /* Color vibrante para la palabra dinámica */
     font-weight: bold;
+    line-height: inherit; /* Hereda la altura de línea del contenedor */
+    margin-left: -0.1rem; /* Ajusta según sea necesario */
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Ajusta el espacio entre elementos */
+    letter-spacing: -0.03em; /* Reduce el espacio entre el texto estático y dinámico */
 }
 
 .welcome-section, .circuits-section, .places-section, .tours-section {

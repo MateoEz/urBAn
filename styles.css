@@ -72,7 +72,7 @@ header nav ul li a:hover {
 
 .slide {
     position: absolute;
-    width: 60vw; /* Ocupa la mitad de la pantalla */
+    width: 100vw; /* Ocupa la mitad de la pantalla */
     height: 100%; /* Mantener altura completa */
     right: 0; /* Alineado a la derecha */
     opacity: 0;
@@ -98,7 +98,7 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.65);
     z-index: 1;
 }
 
@@ -115,14 +115,14 @@ header nav ul li a:hover {
 
 .hero-title h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3em;
+    font-size: 5em;
     margin: 0;
     color: #D8C8A2; /* Título beige oscuro */
 }
 
 .hero-title p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
+    font-size: 3em;
     color: #D8C8A2; /* Párrafo beige oscuro */
     margin: 10px 0 0 0;
 }
@@ -244,19 +244,12 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.hero-title h1 {
-    font-size: 4em;
-}
 
-.hero-title p {
-    font-size: 1.25em;
-    margin-top: 20px;
-}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 100%;
     }
     
     header {
@@ -280,11 +273,11 @@ header nav ul li a {
     }
     
     .hero-title h1 {
-        font-size: 2.5em;
+        font-size: 8vw;
     }
     
     .hero-title p {
-        font-size: 1.25em;
+        font-size: 4vw;
     }
 }
 .explore-section {
@@ -308,4 +301,32 @@ header nav ul li a {
     line-height: 1.6; /* Espaciado entre líneas */
     max-width: 800px; /* Limitar el ancho del contenido */
     margin: 0 auto; /* Centrar contenido */
+}
+/* Estilo del footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo del botón de WhatsApp flotante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que el botón quede encima de otros elementos */
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

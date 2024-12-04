@@ -72,16 +72,14 @@ header nav ul li a:hover {
 
 .slide {
     position: absolute;
-    width: 50vw; /* Ocupa la mitad de la pantalla */
+    width: 60vw; /* Ocupa la mitad de la pantalla */
     height: 100%; /* Mantener altura completa */
     right: 0; /* Alineado a la derecha */
-    opacity: 0; /* Inicialmente oculto */
+    opacity: 0;
     transition: opacity 1s ease-in-out, background-image 1s ease-in-out;
-    
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0) 70%), url(''); /* Gradiente de desvanecimiento */
-    background-size: cover; /* Asegura que la imagen cubra toda la diapositiva */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
 }
 
 .slide.active {

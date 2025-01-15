@@ -194,61 +194,80 @@ h2 {
     color: #8B5A2B; /* Marrón claro para el texto */
     margin-bottom: 20px;
 }
+ 
 
-/* Tours Section */
-.tours-section {
-    padding: 50px 20px;
-    background-color: #F5F5DC; /* Light beige background */
-    text-align: center;
-  }
-  
-  .tours-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #4B3D28;
-    margin-bottom: 20px;
-  }
- /* Grid Layout */
-.tours-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-    gap: 20px; /* Space between items */
-    margin-top: 20px;
-  }
-  
-  .tour-item {
-    background-color: #FFFFFF; /* White background */
+/* Glider.js Container */
+.glider-contain {
+  position: relative;
+}
+
+.glider {
+  display: flex;
+  gap: 10px;
+  overflow: hidden; /* Keeps items inside the container */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 10px; /* Adjust the width of each item */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carousel-item img {
+    width: 30%;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px; /* Reduced padding */
-    text-align: left;
-  }
-  
-  .tour-item img {
-    width: 100%;
-    max-width: 200px; /* Adjust image size */
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px; /* Reduced margin */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .tour-item h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em; /* Smaller title size */
-    color: #4B3D28;
-    margin-bottom: 8px; /* Reduced margin */
-  }
-  
-  .tour-item p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9em; /* Smaller description size */
-    line-height: 1.4; /* Tighter line spacing */
-    color: #4B3D28;
-  }
+    margin: 0 auto 10px auto; /* Center horizontally using auto margins */
+    display: block; /* Required for margin auto to work */
+}
 
+.carousel-item h3 {
+  font-size: 1em;
+  color: #4B3D28;
+  margin-bottom: 8px;
+  text-align: center;
+}
 
+.carousel-item p {
+  font-size: 0.9em;
+  color: #4B3D28;
+  line-height: 1.4;
+  text-align: center;
+}
 
+/* Navigation Buttons */
+.glider-prev,
+.glider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4B3D28;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.glider-prev {
+  left: -10px;
+}
+
+.glider-next {
+  right: -10px;
+}
+
+.glider-prev:hover,
+.glider-next:hover {
+  background-color: #7B5B3E;
+}
 .contact-form {
     display: flex; /* Uso de flexbox para el formulario */
     flex-direction: column; /* Colocar los elementos en columna */
@@ -315,12 +334,19 @@ header nav ul li a {
     }
     .tours-grid {
         grid-template-columns: 1fr; /* 1 column for phones */
-      }
+    }
+    
+    .carousel-item {
+        flex: 0 0 100%; /* Show 1 item at a time */
+        max-width: 100%;
+    }
   }
 
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
+    
+    
     .container {
         width: 100%;
     }
@@ -333,6 +359,11 @@ header nav ul li a {
         align-items: flex-start;
     }
     
+    .carousel-item {
+        flex: 0 0 45%; /* Show 2 items at a time */
+        max-width: 45%;
+    }
+
     header nav ul {
         flex-direction: column;
         align-items: flex-start;

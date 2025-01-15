@@ -131,3 +131,33 @@ function nextSlide() {
 setInterval(nextSlide, 8000);
 
 showSlide(currentSlide);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 3, // Number of items visible at a time
+      slidesToScroll: 1, // Number of items to scroll at a time
+      draggable: true, // Enables dragging
+      dots: false, // Optional: Add dots navigation if needed
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next',
+      },
+      responsive: [
+        {
+          breakpoint: 768, // For tablets
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480, // For mobile
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  });

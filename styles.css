@@ -119,22 +119,28 @@ header nav ul li a:hover {
     color: #D8C8A2; /* Título beige oscuro */
 }
 
-.hero-title p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3em;
-    color: #D8C8A2; /* Párrafo beige oscuro */
-    margin: 10px 0 0 0;
-}
-
-.hero-title h1 .ba-part {
-    font-size: 6rem;
-    color: yellow; 
+.hero-title .ur {
+    font-size: 4.0rem;
+    margin-right: -14px; /* Asegúrate de eliminar márgenes */
   }
-  .hero-title h1 .ur-tours-part {
-    font-size: 2rem;
-    color: red;
+  
+  .hero-title .ba-part {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff9100;
+    margin-right: -44px; /* Reduce espacio extra */
+    letter-spacing: 0.05rem; /* Opcional: Ajusta el espacio entre letras */
+  }
+  
+  .hero-title .n {
+    font-size: 4.0rem;
+    margin-left: 30px; /* Reduce espacio a la izquierda */
   }
 
+  .hero-title .tours {
+    font-size: 4.0rem;
+    margin-left: 10px; /* Reduce espacio a la izquierda */
+  }
 .typewriter {
   display: inline-block;
   overflow: hidden;
@@ -154,7 +160,7 @@ header nav ul li a:hover {
 }
 
 .dynamic-word {
-    color: #FF5733; /* Color vibrante para la palabra dinámica */
+     color: #ff9100;
     font-weight: bold;
     line-height: inherit; /* Hereda la altura de línea del contenedor */
     margin-left: -0.1rem; /* Ajusta según sea necesario */
@@ -208,30 +214,35 @@ h2 {
 }
 
 .carousel-item {
-  flex: 0 0 auto;
-  text-align: left;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  width: 10px; /* Adjust the width of each item */
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.carousel-item img {
-    width: 30%;
-    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 auto;
+    text-align: left;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 0 auto 10px auto; /* Center horizontally using auto margins */
-    display: block; /* Required for margin auto to work */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px; /* Ancho fijo */
+    height: 500px; /* Altura fija para todos los items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye contenido */
+    margin: 0 10px; /* Espaciado entre items */
+    align-items: center; /* Centra horizontalmente */
+}
+.carousel-item img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta sin deformar */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px;
 }
 
 .carousel-item h3 {
-  font-size: 1em;
-  color: #4B3D28;
-  margin-bottom: 8px;
-  text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4B3D28;
+    margin: 10px 0; /* Espaciado uniforme */
+    min-height: 60px; /* Asegura que todos los títulos ocupen el mismo espacio */
+    text-align: center; /* Opcional: centra el texto */
 }
 
 .carousel-item p {
@@ -337,9 +348,18 @@ header nav ul li a {
     }
     
     .carousel-item {
-        flex: 0 0 100%; /* Show 1 item at a time */
-        max-width: 100%;
-    }
+        /* Let it fill most of the screen but not edge-to-edge */
+        max-width: 100%; 
+        margin: 0 auto;
+      }
+      
+      /* You can also reduce font size a bit if text looks too large */
+      .carousel-item h3 {
+        font-size: 1rem;
+      }
+      .carousel-item p {
+        font-size: 0.9rem;
+      }
   }
 
 

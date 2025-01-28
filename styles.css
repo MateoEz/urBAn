@@ -362,6 +362,14 @@ header nav ul li a {
       }
   }
 
+  @media screen and (max-width: 1028px) {
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
@@ -382,11 +390,6 @@ header nav ul li a {
     .carousel-item {
         flex: 0 0 45%; /* Show 2 items at a time */
         max-width: 45%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     header nav ul li {
@@ -456,4 +459,59 @@ header nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.antes-de-llegar-section {
+    padding: 50px 20px;
+    background-color: #F5F5DC; /* Fondo beige claro */
+    border-bottom: 2px solid #4B3D28; /* Línea divisoria */
+    text-align: center;
+}
+
+.antes-de-llegar-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4B3D28; /* Marrón oscuro */
+    font-family: 'Playfair Display', serif;
+}
+
+.antes-de-llegar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    max-width: 1200px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.card {
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #4B3D28;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #8B5A2B; /* Marrón claro */
+    line-height: 1.6;
+}
+iframe {
+    width: 100%; /* Ajusta el ancho del mapa al contenedor */
+    height: 100%; /* Ajusta la altura al contenedor */
+    border: none; /* Quita el borde por defecto */
+}
+.map-container {
+    border-radius: 10px; /* Bordes redondeados del mapa */
+    overflow: hidden; /* Asegura que el iframe no sobresalga */
+    height: 200px; /* Tamaño fijo para el mapa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

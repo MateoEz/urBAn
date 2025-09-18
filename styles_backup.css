@@ -3,18 +3,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-/* Animaciones de entrada para las secciones */
-.section-animate {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease-out;
-}
-
-.section-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 body {
     font-family: 'Raleway', Arial, sans-serif;
     margin: 0;
@@ -31,13 +19,11 @@ body {
 
 header {
     position: relative;
-    padding: 10px 20px;
-    background-color: #4B3D28;
+    padding: 20px;
+    background-color: #4B3D28; /* Marrón oscuro */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 55px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
@@ -45,52 +31,37 @@ header .logo img {
 }
 
 header nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex: 2;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
-    gap: 10px;
 }
 
 header nav ul li {
-    margin: 0;
+    margin-left: 20px;
 }
 
 header nav ul li a {
-    color: #D8C8A2;
+    color: #D8C8A2; /* Beige oscuro */
     text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    font-weight: 500;
-    font-size: 0.95em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
 header nav ul li a:hover {
-    background-color: rgba(255, 145, 0, 0.15);
-    color: #ff9100;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 145, 0, 0.2);
+    background-color: #7B5B3E; /* Marrón claro al hacer hover */
 }
 
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
-    min-height: 600px;
+    height: 500px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .slider {
@@ -101,19 +72,18 @@ header nav ul li a:hover {
 
 .slide {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw; /* Ocupa la mitad de la pantalla */
+    height: 100%; /* Mantener altura completa */
+    right: 0; /* Alineado a la derecha */
     opacity: 0;
-    transform: scale(1.1);
-    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1s ease-in-out, background-image 1s ease-in-out;
+
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .slide.active {
     opacity: 1;
-    transform: scale(1);
 }
 
 .slide img {
@@ -132,47 +102,51 @@ header nav ul li a:hover {
     z-index: 1;
 }
 
-.hero-content {
+.hero-title {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
+    text-align: left;
+    color: #D8C8A2; /* Beige oscuro para el título */
     z-index: 2;
-    animation: fadeInUp 1s ease-out 0.5s both;
 }
 
-.main-title {
+.hero-title h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 6.5em;
-    margin: 0 0 20px 0;
-    color: #D8C8A2;
-    line-height: 1.1;
-    text-align: left;
+    font-size: 5em;
+    margin: 0;
+    color: #D8C8A2; /* Título beige oscuro */
 }
 
-.ur, .n, .tours {
-    color: #D8C8A2;
-    font-weight: normal;
-}
-
-.ba {
-    color: #ff9100;
+.hero-title .ur {
+    font-size: 4.0rem;
+    margin-right: -14px; /* Asegúrate de eliminar márgenes */
+  }
+  
+  .hero-title .ba-part {
+    font-size: 5rem;
     font-weight: bold;
-}
+    color: #ff9100;
+    margin-right: -44px; /* Reduce espacio extra */
+    letter-spacing: 0.05rem; /* Opcional: Ajusta el espacio entre letras */
+  }
+  
+  .hero-title .n {
+    font-size: 4.0rem;
+    margin-left: 30px; /* Reduce espacio a la izquierda */
+  }
 
-.hero-subtitle {
-    font-size: 1.8em;
-    color: #D8C8A2;
-    font-weight: 300;
-    text-align: left;
-}
+  .hero-title .tours {
+    font-size: 4.0rem;
+    margin-left: 10px; /* Reduce espacio a la izquierda */
+  }
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 3px solid #ff9100;
+  /* white-space: nowrap; <-- Remove this line */
+  border-right: 2px solid #D8C8A2;
   animation: blink-caret 0.75s step-end infinite;
-  font-size: inherit;
-  font-weight: bold;
 }
 
 @keyframes typing {
@@ -182,50 +156,7 @@ header nav ul li a:hover {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #ff9100; }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    50% { border-color: #D8C8A2; }
 }
 
 .dynamic-word {
@@ -236,60 +167,23 @@ header nav ul li a:hover {
 }
 
 .subtitle {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 0.3rem;
-    font-size: 1.8em;
-    margin: 0;
-    font-weight: 300;
-    color: #D8C8A2;
+    display: inline-flex; /* or inline-block */
+    align-items: baseline; /* or center */
+    gap: 0.3rem; /* smaller gap might help prevent wrapping */
 }
 
 .welcome-section, .circuits-section, .places-section, .tours-section {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Ajuste de padding para mayor espacio */
     text-align: center;
-    background: linear-gradient(135deg, #F5F5DC 0%, #E8E8D3 100%);
-    border-bottom: 2px solid #4B3D28;
-    position: relative;
-    overflow: hidden;
-}
-
-.welcome-section::before, .circuits-section::before, .places-section::before, .tours-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    animation: shimmer 3s infinite;
-}
-
-@keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    background-color: #F5F5DC; /* Beige claro como fondo para estas secciones */
+    border-bottom: 2px solid #4B3D28; /* Línea divisoria para separar secciones */
 }
 
 h2 {
-    font-size: 2.8em;
-    margin-bottom: 30px;
-    color: #4B3D28;
+    font-size: 2.5em; /* Aumenta el tamaño del título */
+    margin-bottom: 20px;
+    color: #4B3D28; /* Marrón oscuro para el título */
     font-family: 'Playfair Display', serif;
-    position: relative;
-    animation: fadeInUp 0.8s ease-out;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, #ff9100, #4B3D28);
-    border-radius: 2px;
 }
 
 .section-content {
@@ -302,46 +196,9 @@ h2::after {
 }
 
 .section-description {
-    font-size: 1.2em;
-    color: #8B5A2B;
-    margin-bottom: 30px;
-}
-
-.welcome-stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.stat-item {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #ff9100, #ff6b00);
-    color: white;
-    border-radius: 15px;
-    min-width: 150px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 145, 0, 0.3);
-}
-
-.stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(255, 145, 0, 0.4);
-}
-
-.stat-item h3 {
-    font-size: 2.5em;
-    margin: 0 0 10px 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-}
-
-.stat-item p {
-    font-size: 1em;
-    margin: 0;
-    opacity: 0.9;
+    font-size: 1.2em; /* Tamaño de fuente para la descripción */
+    color: #8B5A2B; /* Marrón claro para el texto */
+    margin-bottom: 20px;
 }
  
 
@@ -360,95 +217,67 @@ h2::after {
     flex: 0 0 auto;
     text-align: left;
     background-color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    padding: 0;
-    width: 320px;
-    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px; /* Ancho fijo */
+    height: 500px; /* Altura fija para todos los items */
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.carousel-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    justify-content: space-between; /* Distribuye contenido */
+    margin: 0 10px; /* Espaciado entre items */
+    align-items: center; /* Centra horizontalmente */
 }
 .carousel-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-    transition: transform 0.3s ease;
-}
-
-.carousel-item:hover img {
-    transform: scale(1.05);
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta sin deformar */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px;
 }
 
 .carousel-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #4B3D28;
-    margin: 20px 20px 10px 20px;
-    min-height: 50px;
-    text-align: center;
-    line-height: 1.3;
-    font-family: 'Playfair Display', serif;
+    margin: 10px 0; /* Espaciado uniforme */
+    min-height: 60px; /* Asegura que todos los títulos ocupen el mismo espacio */
+    text-align: center; /* Opcional: centra el texto */
 }
 
 .carousel-item p {
-    font-size: 0.9em;
-    color: #8B5A2B;
-    line-height: 1.5;
-    text-align: left;
-    margin: 0 20px 20px 20px;
-    flex-grow: 1;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
+  font-size: 0.9em;
+  color: #4B3D28;
+  line-height: 1.4;
+  text-align: center;
 }
 
 /* Navigation Buttons */
 .glider-prev,
 .glider-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(75, 61, 40, 0.9);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 15px 20px;
-    font-size: 1.8em;
-    z-index: 10;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4B3D28;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 1;
 }
 
 .glider-prev {
-    left: -30px;
+  left: -10px;
 }
 
 .glider-next {
-    right: -30px;
+  right: -10px;
 }
 
 .glider-prev:hover,
 .glider-next:hover {
-    background-color: #ff9100;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 6px 20px rgba(255, 145, 0, 0.4);
+  background-color: #7B5B3E;
 }
 .contact-form {
     display: flex; /* Uso de flexbox para el formulario */
@@ -483,41 +312,21 @@ h2::after {
 
 .language-selector {
     position: absolute;
-    top: 50%;
+    top: 10px;
     right: 20px;
-    transform: translateY(-50%);
     display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 6px 10px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 15px;
 }
 
 .language-selector img {
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 50%;
-    padding: 1px;
-    border: 2px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .language-selector img:hover {
-    transform: scale(1.15);
-    border-color: #ff9100;
-    box-shadow: 0 0 15px rgba(255, 145, 0, 0.5);
-}
-
-.language-selector img.active {
-    border-color: #ff9100;
-    box-shadow: 0 0 10px rgba(255, 145, 0, 0.3);
+    transform: scale(1.1);
 }
 
 /* Nuevas adiciones para mejorar la armonía visual */
@@ -588,16 +397,16 @@ header nav ul li a {
         margin-top: 10px;
     }
     
-    .hero-content {
+    .hero-title {
         left: 5%;
         max-width: 90%;
     }
     
-    .main-title {
+    .hero-title h1 {
         font-size: 8vw;
     }
     
-    .hero-subtitle {
+    .hero-title p {
         font-size: 4vw;
     }
 }
@@ -637,28 +446,19 @@ header nav ul li a {
 /* Estilo del botón de WhatsApp flotante */
 .whatsapp-button {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25D366;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
     border-radius: 50%;
-    padding: 15px;
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    animation: float 3s ease-in-out infinite;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
-    animation: pulse 0.6s ease-in-out;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que el botón quede encima de otros elementos */
 }
 
 .whatsapp-button img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    filter: brightness(1.1);
 }
 
 .antes-de-llegar-section {
@@ -684,29 +484,11 @@ header nav ul li a {
 }
 
 .card {
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     text-align: left;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #ff9100, #4B3D28);
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {

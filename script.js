@@ -142,53 +142,125 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialize first slide
     showSlide(currentSlide);
 
-    // Tours Carousel
-    const toursContainer = document.querySelector('.tours-container');
+    // Tours Carousel with Timeline Indicators
+    const toursCarouselWrapper = document.querySelector('.tours-carousel-wrapper');
+    const toursContainer = document.querySelector('.tours-carousel-container');
     const toursPrev = document.querySelector('.tours-prev');
     const toursNext = document.querySelector('.tours-next');
     const toursSlides = document.querySelectorAll('.tours-slide');
+    const toursIndicators = document.querySelector('.tours-indicators');
     
-    let currentToursSlide = 0;
-    const toursPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 640 ? 3 : 1;
-    const maxToursSlides = Math.max(0, toursSlides.length - toursPerView);
+    if (toursContainer && toursSlides.length > 0) {
+        let currentToursSlide = 0;
+        let toursPerView = 1;
+        let maxToursSlides = 0;
 
-    function updateToursCarousel() {
-        const slideWidth = 100 / toursPerView;
-        const translateX = -currentToursSlide * slideWidth;
-        toursContainer.style.transform = `translateX(${translateX}%)`;
-    }
+        function updateToursPerView() {
+            if (window.innerWidth >= 1024) {
+                toursPerView = 3; // Desktop: 3 tours
+            } else if (window.innerWidth >= 768) {
+                toursPerView = 2; // Tablet: 2 tours
+            } else {
+                toursPerView = 1; // Mobile: 1 tour
+            }
+            maxToursSlides = Math.max(0, toursSlides.length - toursPerView);
+            if (currentToursSlide > maxToursSlides) {
+                currentToursSlide = maxToursSlides;
+            }
+        }
 
-    function nextToursSlide() {
-        currentToursSlide = Math.min(currentToursSlide + 1, maxToursSlides);
-        updateToursCarousel();
-    }
+        function createIndicators() {
+            if (!toursIndicators) return;
+            toursIndicators.innerHTML = '';
+            const totalIndicators = maxToursSlides + 1;
+            
+            for (let i = 0; i < totalIndicators; i++) {
+                const indicator = document.createElement('button');
+                indicator.className = `tours-indicator w-3 h-3 rounded-full transition-all duration-300 ${
+                    i === currentToursSlide 
+                        ? 'bg-primary scale-125' 
+                        : 'bg-gray-300 dark:bg-gray-600 hover:bg-primary/50'
+                }`;
+                indicator.setAttribute('aria-label', `Ir al tour ${i + 1}`);
+                indicator.addEventListener('click', () => goToSlide(i));
+                toursIndicators.appendChild(indicator);
+            }
+        }
 
-    function prevToursSlide() {
-        currentToursSlide = Math.max(currentToursSlide - 1, 0);
-        updateToursCarousel();
-    }
+        function updateToursCarousel() {
+            if (!toursContainer) return;
+            const slideWidth = 100 / toursPerView;
+            const translateX = -currentToursSlide * slideWidth;
+            toursContainer.style.transform = `translateX(${translateX}%)`;
+            createIndicators();
+        }
 
-    // Event listeners for tours carousel
-    if (toursNext) {
-        toursNext.addEventListener('click', nextToursSlide);
-    }
-    
-    if (toursPrev) {
-        toursPrev.addEventListener('click', prevToursSlide);
-    }
-
-    // Auto-advance tours carousel every 8 seconds
-    setInterval(() => {
-        if (currentToursSlide < maxToursSlides) {
-            nextToursSlide();
-        } else {
-            currentToursSlide = 0;
+        function goToSlide(index) {
+            currentToursSlide = Math.max(0, Math.min(index, maxToursSlides));
             updateToursCarousel();
         }
-    }, 8000);
 
-    // Initialize tours carousel
-    updateToursCarousel();
+        function nextToursSlide() {
+            if (currentToursSlide < maxToursSlides) {
+                currentToursSlide++;
+            } else {
+                currentToursSlide = 0; // Loop back to start
+            }
+            updateToursCarousel();
+        }
+
+        function prevToursSlide() {
+            if (currentToursSlide > 0) {
+                currentToursSlide--;
+            } else {
+                currentToursSlide = maxToursSlides; // Loop to end
+            }
+            updateToursCarousel();
+        }
+
+        // Event listeners for tours carousel
+        if (toursNext) {
+            toursNext.addEventListener('click', nextToursSlide);
+        }
+        
+        if (toursPrev) {
+            toursPrev.addEventListener('click', prevToursSlide);
+        }
+
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                updateToursPerView();
+                updateToursCarousel();
+            }, 250);
+        });
+
+        // Auto-advance tours carousel every 8 seconds (pause on hover)
+        let autoAdvanceInterval;
+        function startAutoAdvance() {
+            autoAdvanceInterval = setInterval(() => {
+                nextToursSlide();
+            }, 8000);
+        }
+
+        function stopAutoAdvance() {
+            if (autoAdvanceInterval) {
+                clearInterval(autoAdvanceInterval);
+            }
+        }
+
+        if (toursCarouselWrapper) {
+            toursCarouselWrapper.addEventListener('mouseenter', stopAutoAdvance);
+            toursCarouselWrapper.addEventListener('mouseleave', startAutoAdvance);
+        }
+
+        // Initialize
+        updateToursPerView();
+        updateToursCarousel();
+        startAutoAdvance();
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

@@ -1,7 +1,7 @@
 // Language translations
 const translations = {
     es: {
-        subtitle: "Explora Buenos Aires, descubra lo ",
+        subtitle: "Explora Buenos Aires, descubre lo ",
         welcome: "¡Bienvenidos!",
         welcome_text: "Descubre nuestros destinos y comienza tu próxima aventura. Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.",
         antesDeLlegar: "Antes de llegar",

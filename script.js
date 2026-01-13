@@ -3,9 +3,7 @@ const translations = {
     es: {
         subtitle: "Explora Buenos Aires, descubra lo ",
         welcome: "¡Bienvenidos!",
-        welcome_sub: "Descubre nuestros destinos y comienza tu próxima aventura.",
-        exploreHeading: "Explora Buenos Aires",
-        explore_text: "Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.",
+        welcome_text: "Descubre nuestros destinos y comienza tu próxima aventura. Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.",
         antesDeLlegar: "Antes de llegar",
         primeraVez: "Primera vez",
         primeraVezDescripction: "Si es tu primera vez en Buenos Aires, explora los puntos turísticos más importantes utilizando este mapa interactivo. ¡Planifica tus recorridos con facilidad!",
@@ -15,9 +13,7 @@ const translations = {
     pt: {
         subtitle: "Explore Buenos Aires, descubra o ",
         welcome: "Bem-vindos!",
-        welcome_sub: "Descubra nossos destinos e comece sua próxima aventura.",
-        exploreHeading: "Explore Buenos Aires",
-        explore_text: "Urban Tours Buenos Aires é reconhecida como uma das operadoras de turismo mais destacadas da Argentina, especializada em oferecer uma ampla variedade de passeios e soluções de transporte. Nossa equipe de especialistas em viagens está comprometida em fornecer serviços de alta qualidade, atendimento personalizado e assistência para que sua experiência na Argentina seja inesquecível e emocionante.",
+        welcome_text: "Descubra nossos destinos e comece sua próxima aventura. Urban Tours Buenos Aires é reconhecida como uma das operadoras de turismo mais destacadas da Argentina, especializada em oferecer uma ampla variedade de passeios e soluções de transporte. Nossa equipe de especialistas em viagens está comprometida em fornecer serviços de alta qualidade, atendimento personalizado e assistência para que sua experiência na Argentina seja inesquecível e emocionante.",
         antesDeLlegar: "Antes de chegar",
         primeraVez: "Primeira vez",
         primeraVezDescripction: "Se é sua primeira vez em Buenos Aires, explore os pontos turísticos mais importantes usando este mapa interativo. Planeje seus passeios com facilidade!",
@@ -27,9 +23,7 @@ const translations = {
     en: {
         subtitle: "Explore Buenos Aires, discover ",
         welcome: "Welcome!",
-        welcome_sub: "Discover our destinations and start your next adventure.",
-        exploreHeading: "Explore Buenos Aires",
-        explore_text: "Urban Tours Buenos Aires is recognized as one of the most outstanding tour operators in Argentina, specializing in offering a wide range of tours and transportation solutions. Our team of travel experts is committed to providing top-quality services, personalized advice, and assistance to ensure your experience in Argentina is unforgettable and exciting.",
+        welcome_text: "Discover our destinations and start your next adventure. Urban Tours Buenos Aires is recognized as one of the most outstanding tour operators in Argentina, specializing in offering a wide range of tours and transportation solutions. Our team of travel experts is committed to providing top-quality services, personalized advice, and assistance to ensure your experience in Argentina is unforgettable and exciting.",
         antesDeLlegar: "Before arriving",
         primeraVez: "First time",
         primeraVezDescripction: "If it's your first time in Buenos Aires, explore the most important tourist spots using this interactive map. Plan your routes with ease!",
@@ -39,9 +33,7 @@ const translations = {
     it: {
         subtitle: "Esplora Buenos Aires, scopri ",
         welcome: "Benvenuti!",
-        welcome_sub: "Scopri le nostre destinazioni e inizia la tua prossima avventura.",
-        exploreHeading: "Esplora Buenos Aires",
-        explore_text: "Urban Tours Buenos Aires è riconosciuta come uno degli operatori turistici più rinomati dell'Argentina, specializzata nell'offrire un'ampia gamma di tour e soluzioni di trasporto. Il nostro team di esperti di viaggio si impegna a fornire servizi di alta qualità, consulenza personalizzata e assistenza per garantire che la tua esperienza in Argentina sia indimenticabile ed emozionante.",
+        welcome_text: "Scopri le nostre destinazioni e inizia la tua prossima avventura. Urban Tours Buenos Aires è riconosciuta come uno degli operatori turistici più rinomati dell'Argentina, specializzata nell'offrire un'ampia gamma di tour e soluzioni di trasporto. Il nostro team di esperti di viaggio si impegna a fornire servizi di alta qualità, consulenza personalizzata e assistenza per garantire che la tua esperienza in Argentina sia indimenticabile ed emozionante.",
         antesDeLlegar: "Prima di arrivare",
         primeraVez: "Prima volta",
         primeraVezDescripction: "Se è la tua prima volta a Buenos Aires, esplora i punti turistici più importanti utilizzando questa mappa interattiva. Pianifica i tuoi percorsi con facilità!",

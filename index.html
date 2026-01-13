@@ -171,6 +171,15 @@
                         </div>
                         <h1 class="text-2xl font-bold tracking-tighter text-text-light dark:text-text-dark">urBAn Tours</h1>
                     </a>
+                    <!-- Navigation Menu -->
+                    <nav class="hidden lg:flex items-center gap-4 flex-1 justify-center mx-8">
+                        <a href="#antes-de-llegar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Antes de llegar</a>
+                        <a href="#tours" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Nuestros Tours</a>
+                        <a href="#turismo-centro-barrios" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Turismo: del centro a los barrios</a>
+                        <a href="#circuitos-autor" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Circuitos de Autor</a>
+                        <a href="#turismo-salud" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Turismo y Salud</a>
+                        <a href="#salud-bienestar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Salud y bienestar</a>
+                    </nav>
                     <nav class="hidden md:flex items-center gap-2">
                         <button class="h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300" data-lang="es" title="Español">
                             <img src="images/icons/arg-icon.svg" alt="Español" class="w-6 h-6 rounded-full">
@@ -219,47 +228,16 @@
             </section>
 
             <!-- Welcome Section -->
-            <section id="bienvenidos" class="py-16 md:py-24 bg-gradient-to-br from-background-light to-background-light/50 dark:from-background-dark dark:to-background-dark/50">
-                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                        <div class="order-2 md:order-1 slide-in-left">
-                            <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif" data-key="welcome">¡Bienvenidos!</h2>
-                            <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark" data-key="welcome_sub">Descubre nuestros destinos y comienza tu próxima aventura.</p>
-                            <div class="mt-8 grid grid-cols-3 gap-4">
-                                <div class="text-center p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover-lift">
-                                    <div class="text-2xl font-bold text-primary">500+</div>
-                                    <div class="text-sm text-text-muted-light dark:text-text-muted-dark">Tours realizados</div>
-                                </div>
-                                <div class="text-center p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover-lift">
-                                    <div class="text-2xl font-bold text-primary">1000+</div>
-                                    <div class="text-sm text-text-muted-light dark:text-text-muted-dark">Clientes satisfechos</div>
-                                </div>
-                                <div class="text-center p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover-lift">
-                                    <div class="text-2xl font-bold text-primary">5</div>
-                                    <div class="text-sm text-text-muted-light dark:text-text-muted-dark">Años de experiencia</div>
-                                </div>
-            </div>
-            </div>
-                        <div class="order-1 md:order-2 slide-in-right">
-                            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-xl hover-lift">
-                                <img alt="Buenos Aires Street" class="object-cover w-full h-full" src="images/backgrounds/image-2.jpg"/>
-            </div>
-        </div>
-            </div>
-        </div>
-    </section>
-
-            <!-- Explore Section -->
-            <section id="explore" class="py-16 md:py-24">
+            <section id="bienvenidos" class="py-16 md:py-24">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div class="slide-in-left">
-                            <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif" data-key="exploreHeading">Explora Buenos Aires</h2>
-                            <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark" data-key="explore_text">Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.</p>
+                            <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif" data-key="welcome">¡Bienvenidos!</h2>
+                            <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark" data-key="welcome_text">Descubre nuestros destinos y comienza tu próxima aventura. Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.</p>
                         </div>
-                        <div class="slide-in-right">
-                            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-xl hover-lift">
-                                <img alt="Buenos Aires iconic building" class="object-cover w-full h-full" src="images/backgrounds/image-3.jpg"/>
+                        <div class="slide-in-right flex justify-center">
+                            <div class="w-full max-w-md rounded-lg overflow-hidden shadow-xl hover-lift">
+                                <img alt="Obelisco de Buenos Aires" class="object-cover w-full h-auto" src="images/backgrounds/image-2.jpg"/>
                             </div>
                         </div>
                     </div>
@@ -269,59 +247,135 @@
             <!-- Antes de llegar Section -->
             <section id="antes-de-llegar" class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-center font-serif mb-12" data-key="antesDeLlegar">Antes de llegar</h2>
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="bg-card-bg dark:bg-surface-dark p-4 rounded-lg border border-border-light dark:border-border-dark text-center hover-lift shadow-lg hover:bg-card-hover dark:hover:bg-surface-dark/80 transition-colors">
-                            <div class="flex justify-center items-center h-12 w-12 mx-auto rounded-full bg-primary/20 mb-3">
-                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                </svg>
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4" data-key="antesDeLlegar">Antes de llegar</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">Todo lo que necesitas saber para aprovechar al máximo tu visita a Buenos Aires</p>
+                    </div>
+
+                    <!-- Timeline Style Layout -->
+                    <div class="relative">
+                        <!-- Timeline Line -->
+                        <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary to-primary/20 transform -translate-y-1/2"></div>
+                        
+                        <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
+                            <!-- Step 1: Mapa -->
+                            <div class="relative lg:flex lg:flex-col lg:items-center">
+                                <!-- Timeline Dot -->
+                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
+                                
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
+                                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-key="primeraVez">Primera vez</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Explora la ciudad</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4" data-key="primeraVezDescripction">Si es tu primera vez en Buenos Aires, explora los puntos turísticos más importantes utilizando este mapa interactivo.</p>
+                                    
+                                    <!-- Mapa Compacto -->
+                                    <div class="rounded-lg overflow-hidden shadow-lg mb-4">
+                                        <iframe 
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.57338320713455!3d-34.61574368757778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1647892345678!5m2!1ses!2sar" 
+                                            width="100%" 
+                                            height="200" 
+                                            style="border:0;" 
+                                            allowfullscreen="" 
+                                            loading="lazy" 
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            class="rounded-lg"
+                                            title="Mapa de Buenos Aires">
+                                        </iframe>
+                                    </div>
+                                    
+                                    <a href="https://mapa.buenosaires.gob.ar/" target="_blank" class="inline-flex items-center text-primary hover:text-orange-600 font-medium transition-colors" data-key="interactiveMap">
+                                        Abrir mapa completo
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="text-xl font-bold" data-key="primeraVez">Primera vez</h3>
-                            <p class="mt-2 text-text-muted-light dark:text-text-muted-dark" data-key="primeraVezDescripction">Si es tu primera vez en Buenos Aires, explora los puntos turísticos más importantes utilizando este mapa interactivo. ¡Planifica tus recorridos con facilidad!</p>
-                            
-                            <!-- Mapa Interactivo -->
-                            <div class="mt-6 rounded-lg overflow-hidden shadow-lg">
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.57338320713455!3d-34.61574368757778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1647892345678!5m2!1ses!2sar" 
-                                    width="100%" 
-                                    height="400" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy" 
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    class="rounded-lg"
-                                    title="Mapa de Buenos Aires">
-                                </iframe>
+
+                            <!-- Step 2: Imperdibles -->
+                            <div class="relative lg:flex lg:flex-col lg:items-center">
+                                <!-- Timeline Dot -->
+                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
+                                
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
+                                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Imperdibles</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Lugares únicos</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="space-y-3">
+                                        <div class="flex items-start">
+                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                            <span class="text-sm text-gray-600 dark:text-gray-300">Teatro Colón, Casa Rosada, Plaza de Mayo</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                            <span class="text-sm text-gray-600 dark:text-gray-300">Caminito, Cementerio Recoleta, Obelisco</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                            <span class="text-sm text-gray-600 dark:text-gray-300">Puente de la Mujer, Café Tortoni</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                            <span class="text-sm text-gray-600 dark:text-gray-300">Rosedal, Reserva Ecológica, San Telmo</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <a href="https://mapa.buenosaires.gob.ar/" target="_blank" class="mt-4 inline-block bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors" data-key="interactiveMap">Abrir mapa en nueva ventana</a>
-                        </div>
-                        <div class="bg-card-bg dark:bg-surface-dark p-4 rounded-lg border border-border-light dark:border-border-dark text-center hover-lift shadow-lg hover:bg-card-hover dark:hover:bg-surface-dark/80 transition-colors">
-                            <div class="flex justify-center items-center h-12 w-12 mx-auto rounded-full bg-primary/20 mb-3">
-                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold">Imperdibles</h3>
-                            <p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Teatro Colón, Casa de Gobierno, Plaza de Mayo, El Cabildo, Catedral Metropolitana, Museo Bellas Artes, Caminito – La Boca, Cementerio La Recoleta, Café Tortoni, Obelisco, Reserva Ecológica, Rosedal de Palermo, Costanera Sur, Puente de la Mujer – Puerto Madero, Palacio Barolo, Zanjón de Granados, Galerías Pacífico, Floral Genérica, Plaza Dorrego, San Telmo, El Planetario, Cena – Tango – Show, Milongas.</p>
-                        </div>
-                        <div class="bg-card-bg dark:bg-surface-dark p-6 rounded-lg border border-border-light dark:border-border-dark text-center hover-lift shadow-lg hover:bg-card-hover dark:hover:bg-surface-dark/80 transition-colors sm:col-span-2 lg:col-span-1">
-                            <div class="flex justify-center items-center h-12 w-12 mx-auto rounded-full bg-primary/20 mb-3">
-                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                </svg>
+
+                            <!-- Step 3: Tips -->
+                            <div class="relative lg:flex lg:flex-col lg:items-center">
+                                <!-- Timeline Dot -->
+                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
+                                
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
+                                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Tips Locales</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Consejos útiles</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="space-y-3">
+                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🍽️ Comida</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Asado, empanadas, dulce de leche, mate</div>
+                                        </div>
+                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🚇 Transporte</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Subte económico, Uber para distancias largas</div>
+                                        </div>
+                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">⏰ Horarios</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Cena después de 9pm, siesta 1-4pm</div>
+                                        </div>
+                                    </div>
+                                </div>
           </div>
-                            <h3 class="text-xl font-bold">Tips</h3>
-                            <p class="mt-2 text-text-muted-light dark:text-text-muted-dark text-sm">
-                                <strong>Películas filmadas en Buenos Aires:</strong> Evita, El Secreto de sus Ojos, Nueve Reinas, Relatos Salvajes.<br><br>
-                                <strong>Murales imperdibles:</strong> Barracas, San Telmo, La Boca - arte callejero único.<br><br>
-                                <strong>Selfies obligatorias:</strong> Obelisco, Puente de la Mujer, Caminito, Casa Rosada, Cementerio de la Recoleta.<br><br>
-                                <strong>Transporte:</strong> Subte (metro) más económico, Uber/Taxi para distancias largas.<br><br>
-                                <strong>Comida:</strong> Asado, empanadas, dulce de leche, mate, medialunas.<br><br>
-                                <strong>Horarios:</strong> Cena después de las 9pm, siesta de 1-4pm, vida nocturna hasta tarde.
-                            </p>
           </div>
           </div>
       </div>
@@ -437,6 +491,62 @@
           </div>
         </div>
       </section>
+
+            <!-- Turismo: del centro a los barrios Section -->
+            <section id="turismo-centro-barrios" class="py-16 md:py-24 bg-gradient-to-br from-background-light to-background-light/50 dark:from-background-dark dark:to-background-dark/50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Turismo: del centro a los barrios</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                            Descubre la esencia de Buenos Aires desde su corazón histórico hasta los barrios más auténticos. 
+                            Recorridos diseñados para conocer la ciudad desde diferentes perspectivas, combinando los sitios 
+                            emblemáticos del centro con la vida cotidiana de los barrios porteños.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Circuitos de Autor Section -->
+            <section id="circuitos-autor" class="py-16 md:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Circuitos de Autor</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                            Experiencias únicas diseñadas por nuestros expertos locales. Cada circuito es una obra maestra 
+                            que combina historia, cultura, gastronomía y arte, ofreciendo una visión exclusiva y personalizada 
+                            de Buenos Aires que solo nosotros podemos brindar.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Turismo y Salud Section -->
+            <section id="turismo-salud" class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Turismo y Salud</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                            Combinamos el placer de conocer Buenos Aires con el cuidado de tu bienestar. Nuestros programas 
+                            especializados integran actividades turísticas con servicios de salud, creando experiencias 
+                            completas que cuidan tanto tu cuerpo como tu espíritu durante tu estadía en la ciudad.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Salud y bienestar Section -->
+            <section id="salud-bienestar" class="py-16 md:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Salud y bienestar</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                            Programas diseñados para quienes buscan equilibrar el turismo con el cuidado personal. 
+                            Ofrecemos experiencias que incluyen actividades relajantes, espacios de bienestar y opciones 
+                            saludables para disfrutar de Buenos Aires mientras te cuidas y te relajas.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             <!-- About Section -->
             <section id="about" class="py-16 md:py-24 bg-gradient-to-br from-background-light to-background-light/50 dark:from-background-dark dark:to-background-dark/50">

@@ -100,6 +100,20 @@ const translations = {
         saludBienestarDesc: "Programas diseñados para quienes buscan equilibrar el turismo con el cuidado personal. Ofrecemos experiencias que incluyen actividades relajantes, espacios de bienestar y opciones saludables para disfrutar de Buenos Aires mientras te cuidas y te relajas.",
         aboutHeading: "Sobre Nosotros",
         aboutDesc: "Somos un equipo dedicado a ofrecer la mejor experiencia a nuestros clientes. Con años de experiencia en el turismo de Buenos Aires, nos especializamos en crear recorridos únicos que muestran la verdadera esencia de la ciudad.",
+        navSobreNosotros: "Sobre Nosotros",
+        contactFormTitle: "Contáctanos",
+        contactNameLabel: "Nombre",
+        contactEmailLabel: "Email",
+        contactMessageLabel: "Consulta",
+        contactSubmitBtn: "Enviar Consulta",
+        contactInfoTitle: "Información de Contacto",
+        emailLabel: "Email",
+        whyChooseUsTitle: "¿Por qué elegirnos?",
+        whyChooseUs1: "Experiencia y conocimiento local",
+        whyChooseUs2: "Recorridos personalizados y únicos",
+        whyChooseUs3: "Atención al cliente de primera calidad",
+        whyChooseUs4: "Comprometidos con tu experiencia inolvidable",
+        contactSuccess: "¡Consulta enviada!",
         footerCopyright: "© 2025 Urban Tours. Todos los derechos reservados."
     },
     pt: {
@@ -202,6 +216,20 @@ const translations = {
         saludBienestarDesc: "Programas projetados para quem busca equilibrar o turismo com o cuidado pessoal. Oferecemos experiências que incluem atividades relaxantes, espaços de bem-estar e opções saudáveis para desfrutar de Buenos Aires enquanto se cuida e relaxa.",
         aboutHeading: "Sobre Nós",
         aboutDesc: "Somos uma equipe dedicada a oferecer a melhor experiência aos nossos clientes. Com anos de experiência no turismo de Buenos Aires, nos especializamos em criar percursos únicos que mostram a verdadeira essência da cidade.",
+        navSobreNosotros: "Sobre Nós",
+        contactFormTitle: "Entre em contato",
+        contactNameLabel: "Nome",
+        contactEmailLabel: "Email",
+        contactMessageLabel: "Consulta",
+        contactSubmitBtn: "Enviar Consulta",
+        contactInfoTitle: "Informações de Contato",
+        emailLabel: "Email",
+        whyChooseUsTitle: "Por que nos escolher?",
+        whyChooseUs1: "Experiência e conhecimento local",
+        whyChooseUs2: "Percursos personalizados e únicos",
+        whyChooseUs3: "Atendimento ao cliente de primeira qualidade",
+        whyChooseUs4: "Comprometidos com sua experiência inesquecível",
+        contactSuccess: "Consulta enviada!",
         footerCopyright: "© 2025 Urban Tours. Todos os direitos reservados."
     },
     en: {
@@ -304,6 +332,20 @@ const translations = {
         saludBienestarDesc: "Programs designed for those seeking to balance tourism with personal care. We offer experiences that include relaxing activities, wellness spaces, and healthy options to enjoy Buenos Aires while taking care of yourself and relaxing.",
         aboutHeading: "About Us",
         aboutDesc: "We are a team dedicated to offering the best experience to our clients. With years of experience in Buenos Aires tourism, we specialize in creating unique tours that show the true essence of the city.",
+        navSobreNosotros: "About Us",
+        contactFormTitle: "Contact Us",
+        contactNameLabel: "Name",
+        contactEmailLabel: "Email",
+        contactMessageLabel: "Inquiry",
+        contactSubmitBtn: "Send Inquiry",
+        contactInfoTitle: "Contact Information",
+        emailLabel: "Email",
+        whyChooseUsTitle: "Why choose us?",
+        whyChooseUs1: "Experience and local knowledge",
+        whyChooseUs2: "Personalized and unique tours",
+        whyChooseUs3: "First-class customer service",
+        whyChooseUs4: "Committed to your unforgettable experience",
+        contactSuccess: "Inquiry sent!",
         footerCopyright: "© 2025 Urban Tours. All rights reserved."
     },
     it: {
@@ -406,6 +448,20 @@ const translations = {
         saludBienestarDesc: "Programmi progettati per coloro che cercano di bilanciare il turismo con la cura personale. Offriamo esperienze che includono attività rilassanti, spazi di benessere e opzioni salutari per godere di Buenos Aires mentre ti prendi cura di te e ti rilassi.",
         aboutHeading: "Chi siamo",
         aboutDesc: "Siamo un team dedicato a offrire la migliore esperienza ai nostri clienti. Con anni di esperienza nel turismo di Buenos Aires, ci specializziamo nella creazione di tour unici che mostrano la vera essenza della città.",
+        navSobreNosotros: "Chi siamo",
+        contactFormTitle: "Contattaci",
+        contactNameLabel: "Nome",
+        contactEmailLabel: "Email",
+        contactMessageLabel: "Richiesta",
+        contactSubmitBtn: "Invia Richiesta",
+        contactInfoTitle: "Informazioni di Contatto",
+        emailLabel: "Email",
+        whyChooseUsTitle: "Perché sceglierci?",
+        whyChooseUs1: "Esperienza e conoscenza locale",
+        whyChooseUs2: "Tour personalizzati e unici",
+        whyChooseUs3: "Servizio clienti di prima classe",
+        whyChooseUs4: "Impegnati per la tua esperienza indimenticabile",
+        contactSuccess: "Richiesta inviata!",
         footerCopyright: "© 2025 Urban Tours. Tutti i diritti riservati."
     }
 };
@@ -768,6 +824,44 @@ document.addEventListener("DOMContentLoaded", function() {
         mobileMenuBtn.addEventListener('click', () => {
             // Add mobile menu functionality here if needed
             console.log('Mobile menu clicked');
+        });
+    }
+
+    // Contact Form Handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Consulta de ${name}`);
+            const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nConsulta:\n${message}`);
+            const mailtoLink = `mailto:urbantoursargentina@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message (optional)
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            const currentLang = document.querySelector('[data-lang].ring-2')?.getAttribute('data-lang') || 'es';
+            submitBtn.textContent = translations[currentLang]?.contactSuccess || '¡Consulta enviada!';
+            submitBtn.classList.add('bg-green-500', 'hover:bg-green-600');
+            submitBtn.classList.remove('bg-primary', 'hover:bg-orange-600');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.classList.remove('bg-green-500', 'hover:bg-green-600');
+                submitBtn.classList.add('bg-primary', 'hover:bg-orange-600');
+            }, 3000);
         });
     }
 });

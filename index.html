@@ -173,11 +173,11 @@
                     </a>
                     <!-- Navigation Menu -->
                     <nav class="hidden lg:flex items-center gap-4 flex-1 justify-center mx-8">
-                        <a href="#antes-de-llegar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Antes de llegar</a>
-                        <a href="#tours" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Nuestros Tours</a>
-                        <a href="#circuitos-autor" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Circuitos de Autor</a>
-                        <a href="#turismo-salud" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Turismo y Salud</a>
-                        <a href="#salud-bienestar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1">Salud y bienestar</a>
+                        <a href="#antes-de-llegar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1" data-key="navAntesDeLlegar">Antes de llegar</a>
+                        <a href="#tours" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1" data-key="navNuestrosTours">Nuestros Tours</a>
+                        <a href="#circuitos-autor" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1" data-key="navCircuitosAutor">Circuitos de Autor</a>
+                        <a href="#turismo-salud" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1" data-key="navTurismoSalud">Turismo y Salud</a>
+                        <a href="#salud-bienestar" class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary transition-colors duration-300 px-2 py-1" data-key="navSaludBienestar">Salud y bienestar</a>
                     </nav>
                     <nav class="hidden md:flex items-center gap-2">
                         <button class="h-10 w-10 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300" data-lang="es" title="Español">
@@ -269,7 +269,7 @@
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
                         <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4" data-key="antesDeLlegar">Antes de llegar</h2>
-                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">Todo lo que necesitas saber para aprovechar al máximo tu visita a Buenos Aires</p>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto" data-key="antesDeLlegarSubtitle">Todo lo que necesitas saber para aprovechar al máximo tu visita a Buenos Aires</p>
                     </div>
 
                     <!-- Cards Layout -->
@@ -287,7 +287,7 @@
                                         </div>
                                         <div>
                                             <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-key="primeraVez">Primera vez</h3>
-                                            <p class="text-sm text-gray-500 dark:text-gray-400">Explora la ciudad</p>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400" data-key="exploraCiudad">Explora la ciudad</p>
                                         </div>
                                     </div>
                                     
@@ -327,8 +327,8 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Imperdibles</h3>
-                                            <p class="text-sm text-gray-500 dark:text-gray-400">Lugares únicos</p>
+                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-key="imperdibles">Imperdibles</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400" data-key="lugaresUnicos">Lugares únicos</p>
                                         </div>
                                     </div>
                                     
@@ -429,23 +429,23 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Tips Locales</h3>
-                                            <p class="text-sm text-gray-500 dark:text-gray-400">Consejos útiles</p>
+                                            <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-key="tipsLocales">Tips Locales</h3>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400" data-key="consejosUtiles">Consejos útiles</p>
                                         </div>
                                     </div>
                                     
                                     <div class="space-y-3">
                                         <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🚇 Transporte</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Subte económico, colectivo (bus), Uber para distancias largas</div>
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1" data-key="transporte">🚇 Transporte</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300" data-key="transporteDesc">Subte económico, colectivo (bus), Uber para distancias largas</div>
                                         </div>
                                         <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🎨 Murales</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Maradona, Messi, "El Dibu" Martinez, Carlos Gardel</div>
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1" data-key="murales">🎨 Murales</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300" data-key="muralesDesc">Maradona, Messi, "El Dibu" Martinez, Carlos Gardel</div>
                                         </div>
                                         <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">📸 Selfies</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Obelisco, Plaza de Mayo, Caminito, Puerto Madero, La Boca, San Telmo</div>
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1" data-key="selfies">📸 Selfies</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300" data-key="selfiesDesc">Obelisco, Plaza de Mayo, Caminito, Puerto Madero, La Boca, San Telmo</div>
                                         </div>
                                     </div>
                                 </div>
@@ -458,7 +458,7 @@
             <!-- Tours Section -->
             <section id="tours" class="py-16 md:py-24">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-center font-serif mb-12">Nuestros Tours</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-center font-serif mb-12" data-key="nuestrosTours">Nuestros Tours</h2>
                     
                     <!-- Tours Carousel -->
                     <div class="relative max-w-6xl mx-auto">
@@ -472,21 +472,21 @@
                                             <img alt="Circuito Casco Histórico" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/plaza-de-mayo.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Casco Histórico de la Ciudad</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour1_title">Circuito Casco Histórico de la Ciudad</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Es el lugar donde nació la ciudad y donde todavía se perciben con más fuerza sus orígenes coloniales. Allí se concentran edificios que cuentan la historia política, social y cultural del país, desde la época del Virreinato hasta la formación del Estado argentino.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour1_desc1">Es el lugar donde nació la ciudad y donde todavía se perciben con más fuerza sus orígenes coloniales. Allí se concentran edificios que cuentan la historia política, social y cultural del país, desde la época del Virreinato hasta la formación del Estado argentino.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos Plaza de Mayo, destacada por la Pirámide de Mayo y los emblemáticos edificios de su entorno: la Casa Rosada, sede del Gobierno Nacional, la Catedral Metropolitana que alberga el Mausoleo del Libertador Gral. San Martín, el Cabildo, Banco Nación – Casa Central –, Iglesia San Ignacio, Manzana de las Luces y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour1_desc2">Visitaremos Plaza de Mayo, destacada por la Pirámide de Mayo y los emblemáticos edificios de su entorno: la Casa Rosada, sede del Gobierno Nacional, la Catedral Metropolitana que alberga el Mausoleo del Libertador Gral. San Martín, el Cabildo, Banco Nación – Casa Central –, Iglesia San Ignacio, Manzana de las Luces y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -499,21 +499,21 @@
                                             <img alt="Circuito La Boca" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/la-boca.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito La Boca: Vuelta de Rocha - Caminito</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour2_title">Circuito La Boca: Vuelta de Rocha - Caminito</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">El arte y el fútbol argentino están muy vinculados con este paseo lleno de vida y color, donde veremos bailar tango a cada paso. El antiguo puerto al cual llegaron y donde vivieron tantos inmigrantes.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour2_desc1">El arte y el fútbol argentino están muy vinculados con este paseo lleno de vida y color, donde veremos bailar tango a cada paso. El antiguo puerto al cual llegaron y donde vivieron tantos inmigrantes.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos Caminito, Estadio de Boca Juniors, Museo Benito Quinquela Martín, Fundación Proa, Teatro Colón Fabrica, Vuelta de Rocha, Puente Transbordador y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour2_desc2">Visitaremos Caminito, Estadio de Boca Juniors, Museo Benito Quinquela Martín, Fundación Proa, Teatro Colón Fabrica, Vuelta de Rocha, Puente Transbordador y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -526,21 +526,21 @@
                                             <img alt="Circuito Puerto Madero" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/puerto-madero.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Puerto Madero</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour3_title">Circuito Puerto Madero</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">El barrio más nuevo, moderno y exclusivo de Buenos Aires.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour3_desc1">El barrio más nuevo, moderno y exclusivo de Buenos Aires.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos el Puente de la Mujer, diseñado por el famoso arquitecto Santiago Calatrava, Buque Museo Fragata Sarmiento, Buque Museo Corbeta Uruguay, Fundación Fortabat y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour3_desc2">Visitaremos el Puente de la Mujer, diseñado por el famoso arquitecto Santiago Calatrava, Buque Museo Fragata Sarmiento, Buque Museo Corbeta Uruguay, Fundación Fortabat y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -553,21 +553,21 @@
                                             <img alt="Circuito Recoleta" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/recoleta.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Recoleta y Cementerio</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour4_title">Circuito Recoleta y Cementerio</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">El barrio más elegante de Buenos Aires, destacado por su arquitectura francesa, cafés históricos y su famoso cementerio donde descansan personalidades históricas.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour4_desc1">El barrio más elegante de Buenos Aires, destacado por su arquitectura francesa, cafés históricos y su famoso cementerio donde descansan personalidades históricas.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos Avenida Alvear y sus palacios, la Iglesia del Pilar, cementerio de Recoleta, donde destaca el mausoleo de Evita, Museo de Bellas Artes y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour4_desc2">Visitaremos Avenida Alvear y sus palacios, la Iglesia del Pilar, cementerio de Recoleta, donde destaca el mausoleo de Evita, Museo de Bellas Artes y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -580,21 +580,21 @@
                                             <img alt="Circuito Palermo" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/foto%20palermo%201.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Palermo y Parques</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour5_title">Circuito Palermo y Parques</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">El barrio más grande de Buenos Aires, conocido por sus parques, bares de moda y vida nocturna.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour5_desc1">El barrio más grande de Buenos Aires, conocido por sus parques, bares de moda y vida nocturna.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos los Bosques de Palermo, el Rosedal, Planetario, el selecto Barrio Parque con sus embajadas y palacios, Monumento de los españoles, Jardín Botánico, Ecoparque (ex Jardín Zoológico), zona de bares de Palermo Soho y Palermo Hollywood y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour5_desc2">Visitaremos los Bosques de Palermo, el Rosedal, Planetario, el selecto Barrio Parque con sus embajadas y palacios, Monumento de los españoles, Jardín Botánico, Ecoparque (ex Jardín Zoológico), zona de bares de Palermo Soho y Palermo Hollywood y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -607,21 +607,21 @@
                                             <img alt="Circuito San Telmo" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/san-telmo.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito San Telmo y Tango</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour6_title">Circuito San Telmo y Tango</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">El barrio bohemio por excelencia, cuna del tango argentino.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour6_desc1">El barrio bohemio por excelencia, cuna del tango argentino.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos la calle Defensa, Convento de Santo Domingo y Mausoleo del General Belgrano, Mafalda y el Paseo de la Historieta, Zanjón de Granados, Casa Mínima, Plaza Dorrego, la Feria de antigüedades, milongas, cafés históricos, Parque Lezama y su Museo Histórico Nacional y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour6_desc2">Visitaremos la calle Defensa, Convento de Santo Domingo y Mausoleo del General Belgrano, Mafalda y el Paseo de la Historieta, Zanjón de Granados, Casa Mínima, Plaza Dorrego, la Feria de antigüedades, milongas, cafés históricos, Parque Lezama y su Museo Histórico Nacional y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -634,18 +634,18 @@
                                             <img alt="Circuito Barrio Parque" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/recoleta.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Barrio Parque. Embajadas y algo más...</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour7_title">Circuito Barrio Parque. Embajadas y algo más...</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos Museo Nacional de Arte Decorativo, Embajada de Italia, Embajada de España, Embajada de Grecia, Embajada de Bélgica, Casa Redonda, Casa de Victoria Ocampo, Embajada de Chile, Embajada de Polonia, Embajada de Haití, Embajada Arabia Saudita, Embajada del Líbano.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour7_desc1">Visitaremos Museo Nacional de Arte Decorativo, Embajada de Italia, Embajada de España, Embajada de Grecia, Embajada de Bélgica, Casa Redonda, Casa de Victoria Ocampo, Embajada de Chile, Embajada de Polonia, Embajada de Haití, Embajada Arabia Saudita, Embajada del Líbano.</p>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -658,21 +658,21 @@
                                             <img alt="Circuito Tigre" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/tigre.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Circuito Tigre - Delta</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour8_title">Circuito Tigre - Delta</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Paisaje fluvial, patrimonio y cultura ribereña.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour8_desc1">Paisaje fluvial, patrimonio y cultura ribereña.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Excursión al Delta del Tigre, con paseo por el río Luján. Recorrido por la Zona Norte del Gran Buenos Aires. Tigre y su magnífico Delta, Paseo Victorica, Museo de Arte Tigre (ex Casino), el Mercado de Puerto de Frutos, Museo de la Reconquista. Club de Regatas La Marina y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour8_desc2">Excursión al Delta del Tigre, con paseo por el río Luján. Recorrido por la Zona Norte del Gran Buenos Aires. Tigre y su magnífico Delta, Paseo Victorica, Museo de Arte Tigre (ex Casino), el Mercado de Puerto de Frutos, Museo de la Reconquista. Club de Regatas La Marina y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 4 horas</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion4horas">Duración: 4 horas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -685,16 +685,16 @@
                                             <img alt="La Plata" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/la-plata.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">La Plata</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour9_title">La Plata</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Una ciudad joven, vibrante y llena de energía. Cultura, ciencia, naturaleza y diversión… todo en un mismo lugar. La ciudad de las diagonales que te invita a descubrirla a tu manera.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour9_desc1">Una ciudad joven, vibrante y llena de energía. Cultura, ciencia, naturaleza y diversión… todo en un mismo lugar. La ciudad de las diagonales que te invita a descubrirla a tu manera.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Visitaremos Plaza Moreno, Eje Cívico: Catedral, Municipalidad, Teatro Argentino, Legislatura Provincial, Casa Curutchet, El bosque con el Museo Ciencias Naturales y los estadios de Estudiantes y Gimnasia y Esgrima, Ciudad de los Niños y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour9_desc2">Visitaremos Plaza Moreno, Eje Cívico: Catedral, Municipalidad, Teatro Argentino, Legislatura Provincial, Casa Curutchet, El bosque con el Museo Ciencias Naturales y los estadios de Estudiantes y Gimnasia y Esgrima, Ciudad de los Niños y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
@@ -711,23 +711,23 @@
                                             <img alt="Oktoberfest" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/vgb.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Fiesta Nacional de la Cerveza – OKTOBERFEST Argentina</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour10_title">Fiesta Nacional de la Cerveza – OKTOBERFEST Argentina</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Villa General Belgrano. Córdoba</p>
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Desde 1963, Villa General Belgrano celebra su tradicional Oktoberfest, una fiesta que combina música centroeuropea, danzas típicas y cerveza artesanal.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour10_desc1">Villa General Belgrano. Córdoba</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour10_desc2">Desde 1963, Villa General Belgrano celebra su tradicional Oktoberfest, una fiesta que combina música centroeuropea, danzas típicas y cerveza artesanal.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Al recorrer sus calles de estilo alpino, el visitante se encuentra con ferias, sabores tradicionales donde la camaradería, la identidad cordobesa y la herencia alemana se fusionan en un clima festivo único.</p>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Incluye alojamiento y entrada al predio</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour10_desc3">Al recorrer sus calles de estilo alpino, el visitante se encuentra con ferias, sabores tradicionales donde la camaradería, la identidad cordobesa y la herencia alemana se fusionan en un clima festivo único.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour10_desc4">Incluye alojamiento y entrada al predio</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="mt-2 text-sm font-semibold text-primary">Duración: 3 días</div>
+                                                <div class="mt-2 text-sm font-semibold text-primary" data-key="duracion3dias">Duración: 3 días</div>
             </div>
               </div>
               </div>
@@ -740,17 +740,17 @@
                                             <img alt="Colonia del Sacramento" class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" src="images/tours/colonia.jpg"/>
                                         </div>
                                         <div class="p-6 flex flex-col" style="height: calc(600px - 192px);">
-                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Colonia del Sacramento / Uruguay</h3>
+                                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="tour11_title">Colonia del Sacramento / Uruguay</h3>
                                             <div class="tour-content flex-grow overflow-hidden">
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Excursión de día completo</p>
-                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">Esta experiencia promete ser una travesía inolvidable, donde cada rincón de Colonia del Sacramento narra historias de un pasado vibrante y multicultural.</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour11_desc1">Excursión de día completo</p>
+                                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour11_desc2">Esta experiencia promete ser una travesía inolvidable, donde cada rincón de Colonia del Sacramento narra historias de un pasado vibrante y multicultural.</p>
                                                 <div class="tour-full-content hidden">
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">A solo una hora en ferry desde Buenos Aires, en la otra orilla del Río de la Plata, se encuentra esta pintoresca ciudad de origen hispanoportugués, declarada Patrimonio de la Humanidad por la UNESCO, ideal para una escapada de día completo. Durante nuestro recorrido por sus encantadoras calles empedradas, descubriremos la Basílica del Santísimo Sacramento, el icónico Faro, la famosa Calle de los Suspiros, la histórica Puerta de la Ciudadela, y más.</p>
+                                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed" data-key="tour11_desc3">A solo una hora en ferry desde Buenos Aires, en la otra orilla del Río de la Plata, se encuentra esta pintoresca ciudad de origen hispanoportugués, declarada Patrimonio de la Humanidad por la UNESCO, ideal para una escapada de día completo. Durante nuestro recorrido por sus encantadoras calles empedradas, descubriremos la Basílica del Santísimo Sacramento, el icónico Faro, la famosa Calle de los Suspiros, la histórica Puerta de la Ciudadela, y más.</p>
                                                 </div>
                                             </div>
                                             <div class="mt-auto pt-3 border-t border-gray-200 dark:border-gray-700">
                                                 <button class="tour-toggle-btn text-sm font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1">
-                                                    <span>Ver más</span>
+                                                    <span data-key="verMas">Ver más</span>
                                                     <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                                     </svg>
@@ -787,8 +787,8 @@
             <section id="circuitos-autor" class="py-16 md:py-24 bg-gradient-to-br from-background-light to-background-light/50 dark:from-background-dark dark:to-background-dark/50">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Circuitos de Autor</h2>
-                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4" data-key="circuitosAutorTitle">Circuitos de Autor</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto mb-8" data-key="circuitosAutorDesc">
                             Experiencias únicas diseñadas por nuestros expertos locales. Cada circuito es una obra maestra 
                             que combina historia, cultura, gastronomía y arte, ofreciendo una visión exclusiva y personalizada 
                             de Buenos Aires que solo nosotros podemos brindar.
@@ -799,72 +799,72 @@
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                         <!-- Circuito 1: Tras los pasos de la aristocracia -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Tras los pasos de la aristocracia</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Palacios, poder y vida social en la Buenos Aires de fines del siglo XIX y comienzos del XX.</p>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un paseo por los grandes palacios de la Buenos Aires aristocrática que invita a descubrir estilos arquitectónicos, historias familiares y el modo en que la élite construyó y representó su poder encontrando su lugar en la ciudad.</p>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="circuito1_title">Tras los pasos de la aristocracia</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="circuito1_subtitle">Palacios, poder y vida social en la Buenos Aires de fines del siglo XIX y comienzos del XX.</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="circuito1_desc">Un paseo por los grandes palacios de la Buenos Aires aristocrática que invita a descubrir estilos arquitectónicos, historias familiares y el modo en que la élite construyó y representó su poder encontrando su lugar en la ciudad.</p>
                         </div>
 
                         <!-- Circuito 2: Donde Buenos Aires toca el cielo -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Donde Buenos Aires toca el cielo</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Las cúpulas que miran la ciudad</p>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un paseo en busca de las cúpulas porteñas más emblemáticas que invitan a ver la ciudad en las alturas, su arquitectura y los significados que coronan sus edificios, revelándonos cómo la ciudad fue pensada para ser mirada desde lo alto.</p>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="circuito2_title">Donde Buenos Aires toca el cielo</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="circuito2_subtitle">Las cúpulas que miran la ciudad</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="circuito2_desc">Un paseo en busca de las cúpulas porteñas más emblemáticas que invitan a ver la ciudad en las alturas, su arquitectura y los significados que coronan sus edificios, revelándonos cómo la ciudad fue pensada para ser mirada desde lo alto.</p>
                         </div>
 
                         <!-- Circuito 3: Tras las huellas de la fe -->
                         <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Tras las huellas de la fe</h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Templos y órdenes religiosas del Buenos Aires histórico</p>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un recorrido por las iglesias y conventos más antiguos del centro porteño para descubrir las órdenes y congregaciones que los habitaron, su arquitectura y el legado religioso, educativo, social y urbano que moldeó la ciudad desde sus orígenes.</p>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white" data-key="circuito3_title">Tras las huellas de la fe</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="circuito3_subtitle">Templos y órdenes religiosas del Buenos Aires histórico</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="circuito3_desc">Un recorrido por las iglesias y conventos más antiguos del centro porteño para descubrir las órdenes y congregaciones que los habitaron, su arquitectura y el legado religioso, educativo, social y urbano que moldeó la ciudad desde sus orígenes.</p>
                         </div>
                     </div>
 
                     <!-- Cementerio de la Recoleta Section -->
                     <div class="mb-16">
-                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-8 text-center">Cementerio de la Recoleta: Memorial de la Nación</h3>
-                        <p class="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">Cinco recorridos para leer la historia argentina entre majestuosos mausoleos</p>
+                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-8 text-center" data-key="cementerioRecoletaTitle">Cementerio de la Recoleta: Memorial de la Nación</h3>
+                        <p class="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto" data-key="cementerioRecoletaSubtitle">Cinco recorridos para leer la historia argentina entre majestuosos mausoleos</p>
                         
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- Sub-circuito 1: Presidentes -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Presidentes para la eternidad</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">El poder y la República en la Recoleta</p>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un recorrido por las tumbas de los presidentes constitucionales argentinos que permite reflexionar sobre el ejercicio del poder, los proyectos de país y las huellas políticas que dejaron más allá de la vida.</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white" data-key="recoleta1_title">Presidentes para la eternidad</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="recoleta1_subtitle">El poder y la República en la Recoleta</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="recoleta1_desc">Un recorrido por las tumbas de los presidentes constitucionales argentinos que permite reflexionar sobre el ejercicio del poder, los proyectos de país y las huellas políticas que dejaron más allá de la vida.</p>
                             </div>
 
                             <!-- Sub-circuito 2: Vicepresidentes -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">A la sombra del poder</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Vicepresidentes en la historia argentina</p>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Este recorrido propone conocer a los vicepresidentes constitucionales sepultados en la Recoleta y comprender su rol político, sus trayectorias y su lugar —muchas veces silencioso— en la historia nacional.</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white" data-key="recoleta2_title">A la sombra del poder</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="recoleta2_subtitle">Vicepresidentes en la historia argentina</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="recoleta2_desc">Este recorrido propone conocer a los vicepresidentes constitucionales sepultados en la Recoleta y comprender su rol político, sus trayectorias y su lugar —muchas veces silencioso— en la historia nacional.</p>
                             </div>
 
                             <!-- Sub-circuito 3: Mujeres -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Mujeres que hicieron historia</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Voces, luchas y legados en la Recoleta</p>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un paseo dedicado a mujeres de renombre que rompieron moldes, dejaron huella y construyeron legado en distintos ámbitos de la vida social, política, cultural y simbólica de la Argentina.</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white" data-key="recoleta3_title">Mujeres que hicieron historia</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="recoleta3_subtitle">Voces, luchas y legados en la Recoleta</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="recoleta3_desc">Un paseo dedicado a mujeres de renombre que rompieron moldes, dejaron huella y construyeron legado en distintos ámbitos de la vida social, política, cultural y simbólica de la Argentina.</p>
                             </div>
 
                             <!-- Sub-circuito 4: Destinos truncos -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Destinos truncos</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Tragedia, mito y memoria en la Recoleta</p>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un recorrido por historias marcadas por la tragedia, el escándalo y el drama, donde la muerte prematura o violenta transformó a sus protagonistas en figuras atravesadas por el mito y la memoria colectiva.</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white" data-key="recoleta4_title">Destinos truncos</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="recoleta4_subtitle">Tragedia, mito y memoria en la Recoleta</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="recoleta4_desc">Un recorrido por historias marcadas por la tragedia, el escándalo y el drama, donde la muerte prematura o violenta transformó a sus protagonistas en figuras atravesadas por el mito y la memoria colectiva.</p>
                             </div>
 
                             <!-- Sub-circuito 5: La ciudad de los símbolos -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700 md:col-span-2 lg:col-span-1">
-                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">La ciudad de los símbolos</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold">Arquitectura, arte y lenguaje funerario</p>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Un recorrido que invita a leer el Cementerio de la Recoleta como un museo a cielo abierto, descubriendo estilos arquitectónicos, símbolos funerarios y mensajes ocultos sobre la vida, la muerte y la eternidad.</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white" data-key="recoleta5_title">La ciudad de los símbolos</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2 font-semibold" data-key="recoleta5_subtitle">Arquitectura, arte y lenguaje funerario</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed" data-key="recoleta5_desc">Un recorrido que invita a leer el Cementerio de la Recoleta como un museo a cielo abierto, descubriendo estilos arquitectónicos, símbolos funerarios y mensajes ocultos sobre la vida, la muerte y la eternidad.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Turismo: del centro a los barrios -->
                     <div class="mt-16 pt-16 border-t border-gray-200 dark:border-gray-700">
-                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-8 text-center">Turismo: del centro a los barrios</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-8 text-center" data-key="turismoCentroBarriosTitle">Turismo: del centro a los barrios</h3>
                         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700 text-center">
                                 <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Villa Devoto</h4>
@@ -887,8 +887,8 @@
             <section id="turismo-salud" class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Turismo y Salud</h2>
-                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4" data-key="turismoSaludTitle">Turismo y Salud</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto" data-key="turismoSaludDesc">
                             Combinamos el placer de conocer Buenos Aires con el cuidado de tu bienestar. Nuestros programas 
                             especializados integran actividades turísticas con servicios de salud, creando experiencias 
                             completas que cuidan tanto tu cuerpo como tu espíritu durante tu estadía en la ciudad.
@@ -901,8 +901,8 @@
             <section id="salud-bienestar" class="py-16 md:py-24">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4">Salud y bienestar</h2>
-                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4" data-key="saludBienestarTitle">Salud y bienestar</h2>
+                        <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto" data-key="saludBienestarDesc">
                             Programas diseñados para quienes buscan equilibrar el turismo con el cuidado personal. 
                             Ofrecemos experiencias que incluyen actividades relajantes, espacios de bienestar y opciones 
                             saludables para disfrutar de Buenos Aires mientras te cuidas y te relajas.
@@ -917,7 +917,7 @@
                     <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div class="order-2 md:order-1 slide-in-left">
                             <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif" data-key="aboutHeading">Sobre Nosotros</h2>
-                            <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark">Somos un equipo dedicado a ofrecer la mejor experiencia a nuestros clientes. Con años de experiencia en el turismo de Buenos Aires, nos especializamos en crear recorridos únicos que muestran la verdadera esencia de la ciudad.</p>
+                            <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark" data-key="aboutDesc">Somos un equipo dedicado a ofrecer la mejor experiencia a nuestros clientes. Con años de experiencia en el turismo de Buenos Aires, nos especializamos en crear recorridos únicos que muestran la verdadera esencia de la ciudad.</p>
                         </div>
                         <div class="order-1 md:order-2 slide-in-right">
                             <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-xl hover-lift">
@@ -933,7 +933,7 @@
         <footer class="bg-gray-900 dark:bg-gray-900 border-t border-border-light dark:border-border-dark">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div class="flex justify-center items-center">
-                    <p class="text-sm text-white">© 2025 Urban Tours. Todos los derechos reservados.</p>
+                    <p class="text-sm text-white" data-key="footerCopyright">© 2025 Urban Tours. Todos los derechos reservados.</p>
                 </div>
             </div>
 </footer>

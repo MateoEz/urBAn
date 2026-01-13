@@ -262,6 +262,78 @@ document.addEventListener("DOMContentLoaded", function() {
         startAutoAdvance();
     }
 
+    // Tour "Ver más" functionality - Only show button if content is truncated
+    function checkTourContentOverflow() {
+        document.querySelectorAll('.tours-slide').forEach(slide => {
+            const contentContainer = slide.querySelector('.tour-content');
+            const fullContent = slide.querySelector('.tour-full-content');
+            const toggleBtn = slide.querySelector('.tour-toggle-btn');
+            
+            if (!contentContainer || !fullContent || !toggleBtn) return;
+            
+            // First, show only the visible content to measure
+            fullContent.classList.add('hidden');
+            contentContainer.style.overflow = 'hidden';
+            
+            // Get the height of visible content only
+            const visibleHeight = contentContainer.scrollHeight;
+            const availableHeight = contentContainer.clientHeight;
+            
+            // Now show full content to measure total height
+            fullContent.classList.remove('hidden');
+            contentContainer.style.overflow = 'visible';
+            const totalHeight = contentContainer.scrollHeight;
+            
+            // Check if full content fits in available space
+            if (totalHeight <= availableHeight) {
+                // Content fits, show everything and hide button
+                fullContent.classList.remove('hidden');
+                contentContainer.style.overflow = 'hidden';
+                toggleBtn.style.display = 'none';
+            } else {
+                // Content doesn't fit, hide extra content and show button
+                fullContent.classList.add('hidden');
+                contentContainer.style.overflow = 'hidden';
+                toggleBtn.style.display = 'flex';
+            }
+        });
+    }
+
+    // Check on load and after a short delay to ensure images are loaded
+    setTimeout(checkTourContentOverflow, 100);
+    window.addEventListener('resize', () => {
+        setTimeout(checkTourContentOverflow, 100);
+    });
+
+    // Tour "Ver más" click handler
+    document.querySelectorAll('.tour-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const card = this.closest('.tours-slide');
+            const fullContent = card.querySelector('.tour-full-content');
+            const contentContainer = card.querySelector('.tour-content');
+            const icon = this.querySelector('svg');
+            const span = this.querySelector('span');
+            
+            if (fullContent) {
+                const isExpanded = !fullContent.classList.contains('hidden');
+                
+                if (isExpanded) {
+                    // Collapse
+                    fullContent.classList.add('hidden');
+                    contentContainer.style.overflow = 'hidden';
+                    span.textContent = 'Ver más';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Expand
+                    fullContent.classList.remove('hidden');
+                    contentContainer.style.overflow = 'auto';
+                    span.textContent = 'Ver menos';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            }
+        });
+    });
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

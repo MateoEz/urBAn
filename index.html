@@ -235,9 +235,30 @@
                             <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif" data-key="welcome">¡Bienvenidos!</h2>
                             <p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark" data-key="welcome_text">Descubre nuestros destinos y comienza tu próxima aventura. Urban Tours Buenos Aires es reconocido como uno de los operadores turísticos más destacados de Argentina, especializado en ofrecer una diversa gama de recorridos y soluciones de transporte. Nuestro equipo de expertos en viajes se compromete a brindar servicios de primera calidad, asesoramiento personalizado y asistencia para que su experiencia en Argentina sea inolvidable y llena de emociones.</p>
                         </div>
-                        <div class="slide-in-right flex justify-center">
-                            <div class="w-full max-w-md rounded-lg overflow-hidden shadow-xl hover-lift">
-                                <img alt="Obelisco de Buenos Aires" class="object-cover w-full h-auto" src="images/backgrounds/image-2.jpg"/>
+                        <div class="slide-in-right flex justify-center items-center">
+                            <div class="relative w-full max-w-md">
+                                <!-- Decorative frame effect -->
+                                <div class="absolute -inset-4 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-2xl blur-xl opacity-50"></div>
+                                
+                                <!-- Main image container with elegant frame -->
+                                <div class="relative bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-2xl hover-lift transform hover:scale-105 transition-all duration-500">
+                                    <!-- Inner decorative border -->
+                                    <div class="absolute inset-2 border-2 border-primary/30 rounded-xl pointer-events-none"></div>
+                                    
+                                    <!-- Image with elegant rounded corners -->
+                                    <div class="relative overflow-hidden rounded-lg">
+                                        <img alt="Obelisco de Buenos Aires" class="object-cover w-full h-auto transform hover:scale-110 transition-transform duration-700" src="images/backgrounds/image-2.jpg"/>
+                                        
+                                        <!-- Subtle gradient overlay on hover -->
+                                        <div class="absolute inset-0 bg-gradient-to-t from-primary/0 to-transparent opacity-0 hover:opacity-20 transition-opacity duration-500"></div>
+                                    </div>
+                                    
+                                    <!-- Decorative corner elements -->
+                                    <div class="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-primary/40 rounded-tl-lg"></div>
+                                    <div class="absolute -top-2 -right-2 w-6 h-6 border-t-2 border-r-2 border-primary/40 rounded-tr-lg"></div>
+                                    <div class="absolute -bottom-2 -left-2 w-6 h-6 border-b-2 border-l-2 border-primary/40 rounded-bl-lg"></div>
+                                    <div class="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-primary/40 rounded-br-lg"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,18 +273,12 @@
                         <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">Todo lo que necesitas saber para aprovechar al máximo tu visita a Buenos Aires</p>
                     </div>
 
-                    <!-- Timeline Style Layout -->
+                    <!-- Cards Layout -->
                     <div class="relative">
-                        <!-- Timeline Line -->
-                        <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary to-primary/20 transform -translate-y-1/2"></div>
-                        
-                        <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
+                        <div class="grid lg:grid-cols-12 gap-8 lg:gap-6">
                             <!-- Step 1: Mapa -->
-                            <div class="relative lg:flex lg:flex-col lg:items-center">
-                                <!-- Timeline Dot -->
-                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
-                                
-                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                            <div class="lg:col-span-3">
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700 h-full">
                                     <div class="flex items-center mb-4">
                                         <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
                                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,11 +319,8 @@
                             </div>
 
                             <!-- Step 2: Imperdibles -->
-                            <div class="relative lg:flex lg:flex-col lg:items-center">
-                                <!-- Timeline Dot -->
-                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
-                                
-                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                            <div class="lg:col-span-5">
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700 h-full">
                                     <div class="flex items-center mb-4">
                                         <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
                                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -321,33 +333,96 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="space-y-3">
-                                        <div class="flex items-start">
-                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                            <span class="text-sm text-gray-600 dark:text-gray-300">Teatro Colón, Casa Rosada, Plaza de Mayo</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                            <span class="text-sm text-gray-600 dark:text-gray-300">Caminito, Cementerio Recoleta, Obelisco</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                            <span class="text-sm text-gray-600 dark:text-gray-300">Puente de la Mujer, Café Tortoni</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                            <span class="text-sm text-gray-600 dark:text-gray-300">Rosedal, Reserva Ecológica, San Telmo</span>
+                                    <div class="max-h-96 overflow-y-auto">
+                                        <div class="grid grid-cols-2 gap-x-4 gap-y-2">
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">El Obelisco</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Plaza de Mayo</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Casa de Gobierno</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">El Cabildo</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Catedral Metropolitana</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Teatro Colón</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Café Tortoni</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Cementerio de la Recoleta</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">San Telmo</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Puerto Madero</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Puente de la Mujer</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">La Boca</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Caminito</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Floralis Genérica</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Rosedal de Palermo</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Galerías Pacífico</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Museo Bellas Artes</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Reserva Ecológica</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Cenas – Tango</span>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-sm text-gray-600 dark:text-gray-300">Milongas</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Step 3: Tips -->
-                            <div class="relative lg:flex lg:flex-col lg:items-center">
-                                <!-- Timeline Dot -->
-                                <div class="hidden lg:block absolute top-1/2 left-0 w-4 h-4 bg-primary rounded-full transform -translate-y-1/2 -translate-x-2 z-10"></div>
-                                
-                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+                            <div class="lg:col-span-4">
+                                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700 h-full">
                                     <div class="flex items-center mb-4">
                                         <div class="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center mr-4">
                                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -362,16 +437,16 @@
                                     
                                     <div class="space-y-3">
                                         <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🍽️ Comida</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Asado, empanadas, dulce de leche, mate</div>
-                                        </div>
-                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
                                             <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🚇 Transporte</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Subte económico, Uber para distancias largas</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Subte económico, colectivo (bus), Uber para distancias largas</div>
                                         </div>
                                         <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">⏰ Horarios</div>
-                                            <div class="text-xs text-gray-600 dark:text-gray-300">Cena después de 9pm, siesta 1-4pm</div>
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">🎨 Murales</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Maradona, Messi, "El Dibu" Martinez, Carlos Gardel</div>
+                                        </div>
+                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                                            <div class="font-medium text-sm text-gray-900 dark:text-white mb-1">📸 Selfies</div>
+                                            <div class="text-xs text-gray-600 dark:text-gray-300">Obelisco, Plaza de Mayo, Caminito, Puerto Madero, La Boca, San Telmo</div>
                                         </div>
                                     </div>
                                 </div>

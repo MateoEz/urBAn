@@ -1003,4 +1003,67 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 3000);
         });
     }
+
+    // Background Slider for Neighborhoods
+    const backgroundSlides = document.querySelectorAll('.background-slider');
+    let currentBackgroundSlide = 0;
+
+    if (backgroundSlides.length > 0) {
+        setInterval(() => {
+            // Fade out current
+            backgroundSlides[currentBackgroundSlide].classList.remove('opacity-100');
+            backgroundSlides[currentBackgroundSlide].classList.add('opacity-0');
+
+            // Determine next
+            currentBackgroundSlide = (currentBackgroundSlide + 1) % backgroundSlides.length;
+
+            // Fade in next
+            backgroundSlides[currentBackgroundSlide].classList.remove('opacity-0');
+            backgroundSlides[currentBackgroundSlide].classList.add('opacity-100');
+        }, 5000); // Change every 5 seconds
+    }
+
+    // 3D Tilt Effect for Neighborhood Cards
+    const tiltCards = document.querySelectorAll('.tilt-card');
+
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Calculate tilt based on cursor position
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            // Max tilt angle
+            const maxTilt = 10;
+
+            const rotateX = ((y - centerY) / centerY) * -maxTilt; // Invert axis
+            const rotateY = ((x - centerX) / centerX) * maxTilt;
+
+            // Apply transform
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+
+            // Glare effect
+            const glare = card.querySelector('.glare');
+            if (glare) {
+                const glareX = (x / rect.width) * 100;
+                const glareY = (y / rect.height) * 100;
+                glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255,255,255,0.4) 0%, transparent 80%)`;
+                glare.style.opacity = '1';
+            }
+        });
+
+        card.addEventListener('mouseleave', () => {
+            // Reset transform
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+
+            // Reset glare
+            const glare = card.querySelector('.glare');
+            if (glare) {
+                glare.style.opacity = '0';
+            }
+        });
+    });
 });

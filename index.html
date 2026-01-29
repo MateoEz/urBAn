@@ -1249,71 +1249,95 @@
                         </div>
                     </div>
 
-                    <!-- Turismo: del centro a los barrios -->
-                    <div class="mt-16 pt-16 border-t border-gray-200 dark:border-gray-700">
-                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-8 text-center"
-                            data-key="turismoCentroBarriosTitle">Turismo: del centro a los barrios</h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Villa Devoto -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios1_title">Villa Devoto</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios1_desc">El barrio "Jardín de Buenos Aires", con calles
-                                    arboladas, calma y espíritu barrial.</p>
-                            </div>
-                            <!-- Flores -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios2_title">Flores</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios2_desc">Historia y diversidad en uno de los barrios más
-                                    antiguos, donde vivió Jorge Mario Bergoglio: el Papa Francisco.</p>
-                            </div>
-                            <!-- Belgrano -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios3_title">Belgrano</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios3_desc">Un barrio dinámico, famoso por sus verdes barrancas,
-                                    casonas de estilo, el Barrio Chino, el golf y su lago de regatas.</p>
-                            </div>
-                            <!-- Villa del Parque -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios4_title">Villa del Parque</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios4_desc">Barrio tranquilo con identidad porteña, que combina
-                                    un ambiente residencial de calles arboladas, casas bajas y la emblemática estación
-                                    ferroviaria con un importante y movido centro comercial a cielo abierto: la calle
-                                    Cuenca.</p>
-                            </div>
-                            <!-- Paternal -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios5_title">Paternal</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios5_desc">Barrio de perfil pueblerino con un magnífico puente,
-                                    de fuerte identidad fútbolera: Argentinos Juniors y Maradona; automotriz: la avenida
-                                    Warnes y la añorada presencia bodeguera: Giol, Escorihuela, Gargantini, Toro,
-                                    Arizu...</p>
-                            </div>
-                            <!-- Villa Crespo -->
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                                <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                                    data-key="centroBarrios6_title">Villa Crespo</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                                    data-key="centroBarrios6_desc">Barrio pujante que no olvida sus orígenes tangueros y
-                                    futboleros, de inmigración judía y sirio-libanesa; la fundacional fábrica de calzado
-                                    y un memorable conventillo... Accesible con bus, subterráneo y tren, encontró su
-                                    futuro en los outlets, bodegones y cocina de autor.</p>
-                            </div>
+                </div>
+            </section>
+
+            <!-- Turismo: del centro a los barrios (Full Width Slider) -->
+            <section id="turismo-barrios" class="relative py-24 overflow-hidden">
+                <!-- Background Slider -->
+                <div class="absolute inset-0 z-0 select-none pointer-events-none">
+                    <div class="absolute inset-0 bg-black/60 z-10"></div> <!-- Dark overlay -->
+                    <!-- Slider Images -->
+                    <div class="background-slider absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+                        style="background-image: url('images/tours/plaza-de-mayo.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="background-slider absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                        style="background-image: url('images/tours/recoleta.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="background-slider absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                        style="background-image: url('images/tours/san-telmo.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="background-slider absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                        style="background-image: url('images/tours/puerto-madero.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="background-slider absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                        style="background-image: url('images/tours/la-boca.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+                    <h3 class="text-2xl md:text-3xl font-bold tracking-tight font-serif mb-12 text-center text-white drop-shadow-md"
+                        data-key="turismoCentroBarriosTitle">Turismo: del centro a los barrios</h3>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Villa Devoto -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios1_title">Villa Devoto</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios1_desc">El barrio "Jardín de Buenos Aires", con calles arboladas,
+                                calma y espíritu barrial.</p>
+                        </div>
+                        <!-- Flores -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios2_title">Flores</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios2_desc">Historia y diversidad en uno de los barrios más antiguos,
+                                donde vivió Jorge Mario Bergoglio: el Papa Francisco.</p>
+                        </div>
+                        <!-- Belgrano -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios3_title">Belgrano</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios3_desc">Un barrio dinámico, famoso por sus verdes barrancas,
+                                casonas de estilo, el Barrio Chino, el golf y su lago de regatas.</p>
+                        </div>
+                        <!-- Villa del Parque -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios4_title">Villa del Parque</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios4_desc">Barrio tranquilo con identidad porteña, que combina un
+                                ambiente residencial de calles arboladas, casas bajas y la emblemática estación
+                                ferroviaria con un importante y movido centro comercial a cielo abierto: la calle
+                                Cuenca.</p>
+                        </div>
+                        <!-- Paternal -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios5_title">Paternal</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios5_desc">Barrio de perfil pueblerino con un magnífico puente, de
+                                fuerte identidad fútbolera: Argentinos Juniors y Maradona; automotriz: la avenida Warnes
+                                y la añorada presencia bodeguera: Giol, Escorihuela, Gargantini, Toro, Arizu...</p>
+                        </div>
+                        <!-- Villa Crespo -->
+                        <div
+                            class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
+                                data-key="centroBarrios6_title">Villa Crespo</h4>
+                            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium"
+                                data-key="centroBarrios6_desc">Barrio pujante que no olvida sus orígenes tangueros y
+                                futboleros, de inmigración judía y sirio-libanesa; la fundacional fábrica de calzado y
+                                un memorable conventillo... Accesible con bus, subterráneo y tren, encontró su futuro en
+                                los outlets, bodegones y cocina de autor.</p>
                         </div>
                     </div>
                 </div>
@@ -1333,7 +1357,8 @@
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div class="text-center mb-16">
                         <h2 class="text-3xl md:text-5xl font-bold tracking-tight font-serif mb-6"
-                            data-key="turismoSaludTitle">Turismo y Salud</h2>
+                            data-key="turismoSaludTitle">
+                            Turismo y Salud</h2>
                         <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto"
                             data-key="turismoSaludSubtitle">
                             Caminar para Conocer: Los Paseos Suaves que Transforman la Ciudad en Bienestar
@@ -1588,7 +1613,8 @@
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-serif mb-4"
-                            data-key="aboutHeading">Sobre Nosotros</h2>
+                            data-key="aboutHeading">Sobre
+                            Nosotros</h2>
                         <p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto"
                             data-key="aboutDesc">Somos un equipo dedicado a ofrecer la mejor experiencia a nuestros
                             clientes. Con años de experiencia en el turismo de Buenos Aires, nos especializamos en crear
@@ -1600,7 +1626,8 @@
                         <div
                             class="md:col-span-2 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                             <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white"
-                                data-key="contactFormTitle">Contáctanos</h3>
+                                data-key="contactFormTitle">
+                                Contáctanos</h3>
                             <form id="contactForm" class="space-y-4">
                                 <div>
                                     <label for="contactName"
@@ -1638,7 +1665,8 @@
                         <div
                             class="md:col-span-1 bg-gradient-to-br from-primary/10 to-orange-600/10 dark:from-primary/20 dark:to-orange-600/20 rounded-xl p-4 border border-primary/20 dark:border-primary/30">
                             <h4 class="text-base font-bold text-gray-900 dark:text-white mb-2.5"
-                                data-key="whyChooseUsTitle">¿Por qué elegirnos?</h4>
+                                data-key="whyChooseUsTitle">
+                                ¿Por qué elegirnos?</h4>
                             <ul class="space-y-1.5">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none"
@@ -1647,7 +1675,8 @@
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span class="text-sm text-gray-700 dark:text-gray-300"
-                                        data-key="whyChooseUs1">Experiencia y conocimiento local</span>
+                                        data-key="whyChooseUs1">Experiencia y
+                                        conocimiento local</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none"
@@ -1656,7 +1685,8 @@
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span class="text-sm text-gray-700 dark:text-gray-300"
-                                        data-key="whyChooseUs2">Recorridos personalizados y únicos</span>
+                                        data-key="whyChooseUs2">Recorridos
+                                        personalizados y únicos</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none"
@@ -1665,7 +1695,8 @@
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span class="text-sm text-gray-700 dark:text-gray-300"
-                                        data-key="whyChooseUs3">Atención al cliente de primera calidad</span>
+                                        data-key="whyChooseUs3">Atención al
+                                        cliente de primera calidad</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none"
@@ -1674,7 +1705,8 @@
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span class="text-sm text-gray-700 dark:text-gray-300"
-                                        data-key="whyChooseUs4">Comprometidos con tu experiencia inolvidable</span>
+                                        data-key="whyChooseUs4">Comprometidos
+                                        con tu experiencia inolvidable</span>
                                 </li>
                             </ul>
                         </div>
@@ -1708,6 +1740,16 @@
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+            </svg>
+        </a>
+
+        <!-- Instagram Button -->
+        <a class="fixed bottom-52 right-6 w-16 h-16 bg-gradient-to-tr from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-full flex items-center justify-center text-white shadow-lg hover:opacity-90 transition-all duration-300 hover:scale-110 z-40"
+            href="https://www.instagram.com/urbantoursarg/" target="_blank">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6 6h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2z">
                 </path>
             </svg>
         </a>

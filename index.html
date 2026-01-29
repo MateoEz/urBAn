@@ -230,14 +230,67 @@
                             <img src="images/icons/it-icon.svg" alt="Italiano" class="w-6 h-6 rounded-full">
                         </button>
                     </nav>
-                    <button
-                        class="md:hidden flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 dark:bg-primary/20">
+                    <button id="mobile-menu-btn"
+                        class="md:hidden flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
                         <svg class="h-6 w-6 text-text-light dark:text-text-dark" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden md:hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-border-light dark:border-border-dark overflow-hidden transition-all duration-300">
+                <div class="px-4 pt-4 pb-6 space-y-2">
+                    <a href="#antes-de-llegar"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navAntesDeLlegar">Antes de llegar</a>
+                    <a href="#tours"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navNuestrosTours">Nuestros Tours</a>
+                    <a href="#circuitos-autor"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navCircuitosAutor">Circuitos de Autor</a>
+                    <a href="#turismo-salud"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navTurismoSalud">Turismo y Salud</a>
+                    <a href="#salud-bienestar"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navSaludBienestar">Salud y bienestar</a>
+                    <a href="#about"
+                        class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-text-light dark:text-text-dark hover:text-primary hover:bg-primary/5 transition-colors"
+                        data-key="navSobreNosotros">Sobre Nosotros</a>
+
+                    <!-- Language Selectors Mobile -->
+                    <div
+                        class="flex items-center gap-4 mt-6 px-3 pt-4 border-t border-border-light dark:border-border-dark">
+                        <span class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">Idioma:</span>
+                        <div class="flex gap-3">
+                            <button
+                                class="h-9 w-9 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300 ring-2 ring-primary/20"
+                                data-lang="es" title="Español">
+                                <img src="images/icons/arg-icon.svg" alt="Español" class="w-6 h-6 rounded-full">
+                            </button>
+                            <button
+                                class="h-9 w-9 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300"
+                                data-lang="pt" title="Português">
+                                <img src="images/icons/brazil-icon.svg" alt="Português" class="w-6 h-6 rounded-full">
+                            </button>
+                            <button
+                                class="h-9 w-9 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300"
+                                data-lang="en" title="English">
+                                <img src="images/icons/eeuu-icon.svg" alt="English" class="w-6 h-6 rounded-full">
+                            </button>
+                            <button
+                                class="h-9 w-9 flex items-center justify-center rounded-full hover:scale-110 transition-all duration-300"
+                                data-lang="it" title="Italiano">
+                                <img src="images/icons/it-icon.svg" alt="Italiano" class="w-6 h-6 rounded-full">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

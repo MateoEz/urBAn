@@ -97,7 +97,8 @@ const translations = {
         turismoSaludTitle: "Turismo y Salud",
         turismoSaludDesc: "Combinamos el placer de conocer Buenos Aires con el cuidado de tu bienestar. Nuestros programas especializados integran actividades turísticas con servicios de salud, creando experiencias completas que cuidan tanto tu cuerpo como tu espíritu durante tu estadía en la ciudad.",
         saludBienestarTitle: "Salud y bienestar",
-        saludBienestarDesc: "Programas diseñados para quienes buscan equilibrar el turismo con el cuidado personal. Ofrecemos experiencias que incluyen actividades relajantes, espacios de bienestar y opciones saludables para disfrutar de Buenos Aires mientras te cuidas y te relajas.",
+        saludBienestarDesc: "Hoy debemos considerar el bienestar como un objetivo terapéutico, tan importante como los niveles de presión arterial, el azúcar o colesterol...",
+        visitaYouTube: "Conoce más en MFSalud",
         aboutHeading: "Sobre Nosotros",
         aboutDesc: "Somos un equipo dedicado a ofrecer la mejor experiencia a nuestros clientes. Con años de experiencia en el turismo de Buenos Aires, nos especializamos en crear recorridos únicos que muestran la verdadera esencia de la ciudad.",
         navSobreNosotros: "Sobre Nosotros",
@@ -114,6 +115,21 @@ const translations = {
         whyChooseUs3: "Atención al cliente de primera calidad",
         whyChooseUs4: "Comprometidos con tu experiencia inolvidable",
         contactSuccess: "¡Consulta enviada!",
+        turismoSaludSubtitle: "Caminar para Conocer: Los Paseos Suaves que Transforman la Ciudad en Bienestar",
+        turismoSaludIntro: "Caminar es una de las formas más simples y accesibles de mejorar la salud. Y cuando esa caminata sucede en una ciudad llena de historia, parques y espacios tranquilos, el beneficio es doble: el cuerpo se activa y la mente se relaja.",
+        turismoSaludExperienciaTitle: "Turismo y salud: una experiencia completa",
+        turismoSaludExperienciaText: "Cada una de nuestras guiadas busca que la experiencia turística sea también una experiencia de bienestar. Conocer la ciudad sin apuro, con atención plena y a un ritmo amigable, mejora tanto el cuerpo como la mente.",
+        turismoSaludExperienciaText2: "Desde urBAn Tours, creemos que el turismo saludable no solo es posible, sino necesario. Por eso diseñamos paseos suaves, accesibles y seguros donde lo importante es la calma, la comodidad y el disfrute del entorno.",
+        turismoSaludRitmoTitle: "Elegir el ritmo adecuado también es turismo",
+        turismoSaludRitmoText: "No hace falta recorrer largas distancias para conocer una ciudad. Un paseo corto por un parque, una plaza histórica o una costanera tranquila puede brindar más bienestar que una caminata larga y agotadora.",
+        turismoSaludListIntro: "Nuestros recorridos saludables están pensados para:",
+        turismoSaludList1: "Distancias cortas y accesibles",
+        turismoSaludList2: "Paso suave y pausado",
+        turismoSaludList3: "Zonas verdes y ventiladas",
+        turismoSaludList4: "Itinerarios sin esfuerzo",
+        turismoSaludList5: "Muchos puntos de descanso",
+        turismoSaludConclusion: "De esta manera, cualquier persona —independientemente de su condición física— puede disfrutar de una guiada sin preocupaciones.",
+        turismoSaludCTA: "¿Quieres conocer Buenos Aires de manera tranquila y saludable? ¡Contáctanos!",
         footerCopyright: "© 2025 Urban Tours. Todos los derechos reservados."
     },
     pt: {
@@ -213,7 +229,8 @@ const translations = {
         turismoSaludTitle: "Turismo e Saúde",
         turismoSaludDesc: "Combinamos o prazer de conhecer Buenos Aires com o cuidado do seu bem-estar. Nossos programas especializados integram atividades turísticas com serviços de saúde, criando experiências completas que cuidam tanto do seu corpo quanto do seu espírito durante sua estadia na cidade.",
         saludBienestarTitle: "Saúde e bem-estar",
-        saludBienestarDesc: "Programas projetados para quem busca equilibrar o turismo com o cuidado pessoal. Oferecemos experiências que incluem atividades relaxantes, espaços de bem-estar e opções saudáveis para desfrutar de Buenos Aires enquanto se cuida e relaxa.",
+        saludBienestarDesc: "Hoje devemos considerar o bem-estar como um objetivo terapêutico, tão importante quanto os níveis de pressão arterial, açúcar ou colesterol...",
+        visitaYouTube: "Saiba mais em MFSalud",
         aboutHeading: "Sobre Nós",
         aboutDesc: "Somos uma equipe dedicada a oferecer a melhor experiência aos nossos clientes. Com anos de experiência no turismo de Buenos Aires, nos especializamos em criar percursos únicos que mostram a verdadeira essência da cidade.",
         navSobreNosotros: "Sobre Nós",
@@ -230,6 +247,21 @@ const translations = {
         whyChooseUs3: "Atendimento ao cliente de primeira qualidade",
         whyChooseUs4: "Comprometidos com sua experiência inesquecível",
         contactSuccess: "Consulta enviada!",
+        turismoSaludSubtitle: "Caminhar para Conhecer: Passeios Suaves que Transformam a Cidade em Bem-Estar",
+        turismoSaludIntro: "Caminhar é uma das formas mais simples e acessíveis de melhorar a saúde. E quando essa caminhada acontece em uma cidade cheia de história, parques e espaços tranquilos, o benefício é duplo: o corpo se ativa e a mente relaxa.",
+        turismoSaludExperienciaTitle: "Turismo e saúde: uma experiência completa",
+        turismoSaludExperienciaText: "Cada uma de nossas visitas guiadas busca fazer com que a experiência turística seja também uma experiência de bem-estar. Conhecer a cidade sem pressa, com atenção plena e um ritmo amigável, melhora tanto o corpo quanto a mente.",
+        turismoSaludExperienciaText2: "Na urBAn Tours, acreditamos que o turismo saudável não é apenas possível, mas necessário. Por isso, desenhamos passeios suaves, acessíveis e seguros onde o importante é a calma, o conforto e o desfrute do ambiente.",
+        turismoSaludRitmoTitle: "Escolher o ritmo certo também é turismo",
+        turismoSaludRitmoText: "Não é preciso percorrer longas distâncias para conhecer uma cidade. Um passeio curto por um parque, uma praça histórica ou uma orla tranquila pode proporcionar mais bem-estar do que uma caminhada longa e exaustiva.",
+        turismoSaludListIntro: "Nossos roteiros saudáveis são pensados para:",
+        turismoSaludList1: "Distâncias curtas e acessíveis",
+        turismoSaludList2: "Passo suave e pausado",
+        turismoSaludList3: "Zonas verdes e ventiladas",
+        turismoSaludList4: "Itinerários sem esforço",
+        turismoSaludList5: "Muitos pontos de descanso",
+        turismoSaludConclusion: "Dessa forma, qualquer pessoa —independentemente de sua condição física— pode desfrutar de uma visita guiada sem preocupações.",
+        turismoSaludCTA: "Quer conhecer Buenos Aires de maneira tranquila e saudável? Entre em contato!",
         footerCopyright: "© 2025 Urban Tours. Todos os direitos reservados."
     },
     en: {
@@ -329,7 +361,8 @@ const translations = {
         turismoSaludTitle: "Tourism and Health",
         turismoSaludDesc: "We combine the pleasure of getting to know Buenos Aires with caring for your well-being. Our specialized programs integrate tourist activities with health services, creating complete experiences that care for both your body and spirit during your stay in the city.",
         saludBienestarTitle: "Health and Wellness",
-        saludBienestarDesc: "Programs designed for those seeking to balance tourism with personal care. We offer experiences that include relaxing activities, wellness spaces, and healthy options to enjoy Buenos Aires while taking care of yourself and relaxing.",
+        saludBienestarDesc: "Today we must consider well-being as a therapeutic objective, as important as blood pressure, sugar or cholesterol levels...",
+        visitaYouTube: "Learn more at MFSalud",
         aboutHeading: "About Us",
         aboutDesc: "We are a team dedicated to offering the best experience to our clients. With years of experience in Buenos Aires tourism, we specialize in creating unique tours that show the true essence of the city.",
         navSobreNosotros: "About Us",
@@ -346,6 +379,21 @@ const translations = {
         whyChooseUs3: "First-class customer service",
         whyChooseUs4: "Committed to your unforgettable experience",
         contactSuccess: "Inquiry sent!",
+        turismoSaludSubtitle: "Walking to Discover: Gentle Walks that Transform the City into Wellness",
+        turismoSaludIntro: "Walking is one of the simplest and most accessible ways to improve health. And when that walk happens in a city full of history, parks, and quiet spaces, the benefit is double: the body activates and the mind relaxes.",
+        turismoSaludExperienciaTitle: "Tourism and health: a complete experience",
+        turismoSaludExperienciaText: "Each of our guided tours seeks to make the tourist experience also a wellness experience. Getting to know the city without haste, with mindfulness and at a friendly pace, improves both body and mind.",
+        turismoSaludExperienciaText2: "At urBAn Tours, we believe healthy tourism is not only possible but necessary. That's why we design gentle, accessible, and safe walks where what matters is calm, comfort, and enjoyment of the surroundings.",
+        turismoSaludRitmoTitle: "Choosing the right pace is also tourism",
+        turismoSaludRitmoText: "You don't need to cover long distances to get to know a city. A short walk through a park, a historic square, or a quiet waterfront can provide more wellness than a long and exhausting hike.",
+        turismoSaludListIntro: "Our healthy tours are designed for:",
+        turismoSaludList1: "Short and accessible distances",
+        turismoSaludList2: "Gentle and paused pace",
+        turismoSaludList3: "Green and ventilated areas",
+        turismoSaludList4: "Effortless itineraries",
+        turismoSaludList5: "Many resting points",
+        turismoSaludConclusion: "In this way, anyone —regardless of their physical condition— can enjoy a guided tour without worries.",
+        turismoSaludCTA: "Do you want to get to know Buenos Aires in a calm and healthy way? Contact us!",
         footerCopyright: "© 2025 Urban Tours. All rights reserved."
     },
     it: {
@@ -445,7 +493,8 @@ const translations = {
         turismoSaludTitle: "Turismo e Salute",
         turismoSaludDesc: "Combiniamo il piacere di conoscere Buenos Aires con la cura del tuo benessere. I nostri programmi specializzati integrano attività turistiche con servizi sanitari, creando esperienze complete che si prendono cura sia del tuo corpo che del tuo spirito durante il tuo soggiorno in città.",
         saludBienestarTitle: "Salute e Benessere",
-        saludBienestarDesc: "Programmi progettati per coloro che cercano di bilanciare il turismo con la cura personale. Offriamo esperienze che includono attività rilassanti, spazi di benessere e opzioni salutari per godere di Buenos Aires mentre ti prendi cura di te e ti rilassi.",
+        saludBienestarDesc: "Oggi dobbiamo considerare il benessere come un obiettivo terapeutico, tanto importante quanto i livelli di pressione sanguigna, zucchero o colesterolo...",
+        visitaYouTube: "Scopri di più su MFSalud",
         aboutHeading: "Chi siamo",
         aboutDesc: "Siamo un team dedicato a offrire la migliore esperienza ai nostri clienti. Con anni di esperienza nel turismo di Buenos Aires, ci specializziamo nella creazione di tour unici che mostrano la vera essenza della città.",
         navSobreNosotros: "Chi siamo",
@@ -462,6 +511,21 @@ const translations = {
         whyChooseUs3: "Servizio clienti di prima classe",
         whyChooseUs4: "Impegnati per la tua esperienza indimenticabile",
         contactSuccess: "Richiesta inviata!",
+        turismoSaludSubtitle: "Camminare per Conoscere: Le Passeggiate Dolci che Trasformano la Città in Benessere",
+        turismoSaludIntro: "Camminare è uno dei modi più semplici e accessibili per migliorare la salute. E quando questa camminata avviene in una città piena di storia, parchi e spazi tranquilli, il beneficio è doppio: il corpo si attiva e la mente si rilassa.",
+        turismoSaludExperienciaTitle: "Turismo e salute: un'esperienza completa",
+        turismoSaludExperienciaText: "Ognuna delle nostre visite guidate cerca di rendere l'esperienza turistica anche un'esperienza di benessere. Conoscere la città senza fretta, con attenzione piena e a un ritmo amichevole, migliora sia il corpo che la mente.",
+        turismoSaludExperienciaText2: "Da urBAn Tours, crediamo che il turismo salutare non sia solo possibile, ma necessario. Per questo progettiamo passeggiate dolci, accessibili e sicure dove ciò che conta è la calma, il comfort e il godimento dell'ambiente.",
+        turismoSaludRitmoTitle: "Scegliere il ritmo giusto è anche turismo",
+        turismoSaludRitmoText: "Non serve percorrere lunghe distanze per conoscere una città. Una breve passeggiata in un parco, in una piazza storica o su un lungomare tranquillo può offrire più benessere di una camminata lunga ed estenuante.",
+        turismoSaludListIntro: "I nostri percorsi salutari sono pensati per:",
+        turismoSaludList1: "Distanze brevi e accessibili",
+        turismoSaludList2: "Passo dolce e pausato",
+        turismoSaludList3: "Zone verdi e ventilate",
+        turismoSaludList4: "Itinerari senza sforzo",
+        turismoSaludList5: "Molti punti di riposo",
+        turismoSaludConclusion: "In questo modo, chiunque —indipendentemente dalla propria condizione fisica— può godersi una visita guidata senza preoccupazioni.",
+        turismoSaludCTA: "Vuoi conoscere Buenos Aires in modo tranquillo e salutare? Contattaci!",
         footerCopyright: "© 2025 Urban Tours. Tutti i diritti riservati."
     }
 };
@@ -533,7 +597,7 @@ function setLanguage(language) {
     document.querySelectorAll('[data-lang]').forEach(btn => {
         btn.classList.remove('ring-2', 'ring-primary', 'ring-offset-2', 'ring-offset-background-light');
     });
-    
+
     const activeBtn = document.querySelector(`[data-lang="${language}"]`);
     if (activeBtn) {
         activeBtn.classList.add('ring-2', 'ring-primary', 'ring-offset-2', 'ring-offset-background-light');
@@ -544,7 +608,7 @@ function setLanguage(language) {
 }
 
 // Initialize language buttons
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Language switching
     document.querySelectorAll('[data-lang]').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -585,9 +649,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const toursNext = document.querySelector('.tours-next');
     const toursSlides = document.querySelectorAll('.tours-slide');
     const toursIndicators = document.querySelector('.tours-indicators');
-    
+
     if (toursContainer && toursSlides.length > 0) {
-    let currentToursSlide = 0;
+        let currentToursSlide = 0;
         let toursPerView = 1;
         let maxToursSlides = 0;
 
@@ -609,59 +673,58 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!toursIndicators) return;
             toursIndicators.innerHTML = '';
             const totalIndicators = maxToursSlides + 1;
-            
+
             for (let i = 0; i < totalIndicators; i++) {
                 const indicator = document.createElement('button');
-                indicator.className = `tours-indicator w-3 h-3 rounded-full transition-all duration-300 ${
-                    i === currentToursSlide 
-                        ? 'bg-primary scale-125' 
-                        : 'bg-gray-300 dark:bg-gray-600 hover:bg-primary/50'
-                }`;
+                indicator.className = `tours-indicator w-3 h-3 rounded-full transition-all duration-300 ${i === currentToursSlide
+                    ? 'bg-primary scale-125'
+                    : 'bg-gray-300 dark:bg-gray-600 hover:bg-primary/50'
+                    }`;
                 indicator.setAttribute('aria-label', `Ir al tour ${i + 1}`);
                 indicator.addEventListener('click', () => goToSlide(i));
                 toursIndicators.appendChild(indicator);
             }
         }
 
-    function updateToursCarousel() {
+        function updateToursCarousel() {
             if (!toursContainer) return;
-        const slideWidth = 100 / toursPerView;
-        const translateX = -currentToursSlide * slideWidth;
-        toursContainer.style.transform = `translateX(${translateX}%)`;
+            const slideWidth = 100 / toursPerView;
+            const translateX = -currentToursSlide * slideWidth;
+            toursContainer.style.transform = `translateX(${translateX}%)`;
             createIndicators();
         }
 
         function goToSlide(index) {
             currentToursSlide = Math.max(0, Math.min(index, maxToursSlides));
             updateToursCarousel();
-    }
+        }
 
-    function nextToursSlide() {
+        function nextToursSlide() {
             if (currentToursSlide < maxToursSlides) {
                 currentToursSlide++;
             } else {
                 currentToursSlide = 0; // Loop back to start
             }
-        updateToursCarousel();
-    }
+            updateToursCarousel();
+        }
 
-    function prevToursSlide() {
+        function prevToursSlide() {
             if (currentToursSlide > 0) {
                 currentToursSlide--;
             } else {
                 currentToursSlide = maxToursSlides; // Loop to end
             }
-        updateToursCarousel();
-    }
+            updateToursCarousel();
+        }
 
-    // Event listeners for tours carousel
-    if (toursNext) {
-        toursNext.addEventListener('click', nextToursSlide);
-    }
-    
-    if (toursPrev) {
-        toursPrev.addEventListener('click', prevToursSlide);
-    }
+        // Event listeners for tours carousel
+        if (toursNext) {
+            toursNext.addEventListener('click', nextToursSlide);
+        }
+
+        if (toursPrev) {
+            toursPrev.addEventListener('click', prevToursSlide);
+        }
 
         // Handle window resize
         let resizeTimeout;
@@ -677,7 +740,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let autoAdvanceInterval;
         function startAutoAdvance() {
             autoAdvanceInterval = setInterval(() => {
-            nextToursSlide();
+                nextToursSlide();
             }, 8000);
         }
 
@@ -694,7 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Initialize
         updateToursPerView();
-    updateToursCarousel();
+        updateToursCarousel();
         startAutoAdvance();
     }
 
@@ -704,22 +767,22 @@ document.addEventListener("DOMContentLoaded", function() {
             const contentContainer = slide.querySelector('.tour-content');
             const fullContent = slide.querySelector('.tour-full-content');
             const toggleBtn = slide.querySelector('.tour-toggle-btn');
-            
+
             if (!contentContainer || !fullContent || !toggleBtn) return;
-            
+
             // First, show only the visible content to measure
             fullContent.classList.add('hidden');
             contentContainer.style.overflow = 'hidden';
-            
+
             // Get the height of visible content only
             const visibleHeight = contentContainer.scrollHeight;
             const availableHeight = contentContainer.clientHeight;
-            
+
             // Now show full content to measure total height
             fullContent.classList.remove('hidden');
             contentContainer.style.overflow = 'visible';
             const totalHeight = contentContainer.scrollHeight;
-            
+
             // Check if full content fits in available space
             if (totalHeight <= availableHeight) {
                 // Content fits, show everything and hide button
@@ -743,16 +806,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Tour "Ver más" click handler
     document.querySelectorAll('.tour-toggle-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const card = this.closest('.tours-slide');
             const fullContent = card.querySelector('.tour-full-content');
             const contentContainer = card.querySelector('.tour-content');
             const icon = this.querySelector('svg');
             const span = this.querySelector('span');
-            
+
             if (fullContent) {
                 const isExpanded = !fullContent.classList.contains('hidden');
-                
+
                 if (isExpanded) {
                     // Collapse
                     fullContent.classList.add('hidden');
@@ -830,21 +893,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // Contact Form Handler
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const name = document.getElementById('contactName').value;
             const email = document.getElementById('contactEmail').value;
             const message = document.getElementById('contactMessage').value;
-            
+
             // Create mailto link
             const subject = encodeURIComponent(`Consulta de ${name}`);
             const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nConsulta:\n${message}`);
             const mailtoLink = `mailto:urbantoursargentina@gmail.com?subject=${subject}&body=${body}`;
-            
+
             // Open email client
             window.location.href = mailtoLink;
-            
+
             // Show success message (optional)
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
@@ -852,10 +915,10 @@ document.addEventListener("DOMContentLoaded", function() {
             submitBtn.textContent = translations[currentLang]?.contactSuccess || '¡Consulta enviada!';
             submitBtn.classList.add('bg-green-500', 'hover:bg-green-600');
             submitBtn.classList.remove('bg-primary', 'hover:bg-orange-600');
-            
+
             // Reset form
             contactForm.reset();
-            
+
             // Reset button after 3 seconds
             setTimeout(() => {
                 submitBtn.textContent = originalText;
